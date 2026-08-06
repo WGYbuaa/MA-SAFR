@@ -1,6 +1,6 @@
 {
   "sample_count": 60,
-  "sampling_policy": "15 real same-case evaluation units for each combination of Threat matching {Match, Non-match} and Defense validity {Valid, Invalid}. Human judgment fields are prefilled to match the corresponding LLM judgment.",
+  "sampling_policy": "15 real same-case evaluation units for each combination of Threat matching {Match, Non-match} and Defense validity {Valid, Invalid}. ",
   "distribution": {
     "threat_matching": {
       "Match": 30,

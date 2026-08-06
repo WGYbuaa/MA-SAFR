@@ -1272,7 +1272,7 @@ def main() -> None:
     write_json(PACKAGE_ROOT / "release_manifest.json", build_public_release_manifest())
 
     from build_review_overrides import main as build_review_override_main
-    from build_author_verified_subset import main as build_author_verified_subset_main
+    from build_author_verified_subset import main as build_expert_verified_subset_main
 
     build_review_override_main()
     build_author_verified_subset_main()
