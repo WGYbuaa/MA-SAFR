@@ -1,4 +1,4 @@
-# SAAFG Author-Verified Gold Subset Review Notes v0.2
+# SAAFG Expert-Verified Gold Subset Review Notes v0.2
 
 This file accompanies `expert_verified_subset.json`.
 
