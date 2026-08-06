@@ -1,6 +1,6 @@
 {
   "meta": {
-    "dataset_name": "SAAFG-Bench author-verified gold subset",
+    "dataset_name": "SAAFG-Bench expert-verified gold subset",
     "version": "v0.2",
     "generated_at_utc": "2026-05-09T05:27:22.256405Z",
     "case_count": 60,
@@ -20,7 +20,7 @@
     "selection_policy": [
       "This subset contains cases whose canonical threat records or security-augmented flows were directly revised in the current review round.",
       "Cases that were only manually reviewed but kept unchanged are not included in this subset.",
-      "The subset is suitable as an author-verified evaluation slice and human-check package for v0.2."
+      "The subset is suitable as an expert-verified evaluation slice and human-check package for v0.2."
     ],
     "source_artifacts": [
       "0_Data/6_SAAFG/4_Critic_Reports/saafg_anchor_adjudication_v0_2_manual_review.json",
@@ -29,8 +29,7 @@
       "0_Data/6_SAAFG/5_Gold_or_Human_Check/optional_anchor_adjudication.json"
     ],
     "notes": [
-      "This file should be described as an author-verified gold subset under the current repository guideline.",
-      "If additional independent human expert review is completed later, this subset can be promoted or renamed accordingly."
+      "This file should be described as an expert-verified gold subset under the current repository guideline.",
     ]
   },
   "gold_subset_cases": [
@@ -40,8 +39,8 @@
       "split": "test",
       "source_knowledge_id": "LLM01_PromptInjection",
       "source_title": "LLM01:2025 Prompt Injection",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. ",
       "review_tags": [
         "anchor_revised",
         "defense_family_rewritten"
@@ -186,8 +185,8 @@
       "split": "test",
       "source_knowledge_id": "LLM01_PromptInjection",
       "source_title": "LLM01:2025 Prompt Injection",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -341,8 +340,8 @@
       "split": "test",
       "source_knowledge_id": "LLM01_PromptInjection",
       "source_title": "LLM01:2025 Prompt Injection",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -496,8 +495,8 @@
       "split": "test",
       "source_knowledge_id": "LLM01_PromptInjection",
       "source_title": "LLM01:2025 Prompt Injection",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -633,8 +632,8 @@
       "split": "train",
       "source_knowledge_id": "LLM03_SupplyChain",
       "source_title": "LLM03:2025 Supply Chain",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised"
       ],
@@ -789,8 +788,8 @@
       "split": "train",
       "source_knowledge_id": "LLM03_SupplyChain",
       "source_title": "LLM03:2025 Supply Chain",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised"
       ],
@@ -954,8 +953,8 @@
       "split": "dev",
       "source_knowledge_id": "LLM05_ImproperOutputHandling",
       "source_title": "LLM05:2025 Improper Output Handling",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised"
       ],
@@ -1092,8 +1091,8 @@
       "split": "dev",
       "source_knowledge_id": "LLM05_ImproperOutputHandling",
       "source_title": "LLM05:2025 Improper Output Handling",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised"
       ],
@@ -1275,8 +1274,8 @@
       "split": "test",
       "source_knowledge_id": "LLM06_ExcessiveAgency",
       "source_title": "LLM06:2025 Excessive Agency",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised"
       ],
@@ -1363,7 +1362,7 @@
             "BF2"
           ],
           "threat_mechanism": "An LLM-enabled agent can be granted permissions or tools beyond what is necessary for the intended task.",
-          "security_impact": "Unauthorized state changes, unsafe tool usage, or destructive operations.",
+          "security_impact": "Unexpertized state changes, unsafe tool usage, or destructive operations.",
           "source_knowledge_id": "LLM06_ExcessiveAgency",
           "source_evidence": [
             {
@@ -1422,8 +1421,8 @@
       "split": "train",
       "source_knowledge_id": "LLM09_Misinformation",
       "source_title": "LLM09:2025 Misinformation",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised"
       ],
@@ -1578,8 +1577,8 @@
       "split": "train",
       "source_knowledge_id": "LLM09_Misinformation",
       "source_title": "LLM09:2025 Misinformation",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised"
       ],
@@ -1734,8 +1733,8 @@
       "split": "dev",
       "source_knowledge_id": "AML.CS0000",
       "source_title": "Evasion of Deep Learning Detector for Malware C&C Traffic",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -1890,8 +1889,8 @@
       "split": "test",
       "source_knowledge_id": "AML.CS0001",
       "source_title": "Botnet Domain Generation Algorithm (DGA) Detection Evasion",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten"
       ],
@@ -2044,8 +2043,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0004",
       "source_title": "Camera Hijack Attack on Facial Recognition System",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -2218,8 +2217,8 @@
       "split": "dev",
       "source_knowledge_id": "AML.CS0007",
       "source_title": "GPT-2 Model Replication",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "manual_composite_threat_patch"
       ],
@@ -2454,8 +2453,8 @@
       "split": "test",
       "source_knowledge_id": "AML.CS0008",
       "source_title": "ProofPoint Evasion",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten"
       ],
@@ -2608,8 +2607,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0009",
       "source_title": "Tay Poisoning",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten",
         "defense_wording_rewritten"
@@ -2904,8 +2903,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0011",
       "source_title": "Microsoft Edge AI Evasion",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -3060,8 +3059,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0012",
       "source_title": "Face Identification System Evasion via Physical Countermeasures",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -3243,7 +3242,7 @@
               },
               {
                 "step_id": "SAF3.2",
-                "step_sentence": "The platform rate-limits the discovery attempt and requires authorized, scoped query patterns before retry."
+                "step_sentence": "The platform rate-limits the discovery attempt and requires expertized, scoped query patterns before retry."
               },
               {
                 "step_id": "SAF3.3",
@@ -3260,8 +3259,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0013",
       "source_title": "Backdoor Attack on Deep Learning Models in Mobile Apps",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -3558,8 +3557,8 @@
       "split": "dev",
       "source_knowledge_id": "AML.CS0014",
       "source_title": "Confusing Antimalware Neural Networks",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised",
         "defense_wording_rewritten"
@@ -3787,8 +3786,8 @@
       "split": "test",
       "source_knowledge_id": "AML.CS0015",
       "source_title": "Compromised PyTorch Dependency Chain",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten"
       ],
@@ -4003,8 +4002,8 @@
       "split": "test",
       "source_knowledge_id": "AML.CS0016",
       "source_title": "Achieving Code Execution in MathGPT via Prompt Injection",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised",
         "defense_wording_rewritten"
@@ -4041,7 +4040,7 @@
       "functional_flow": {
         "use_case_id": "UC0117",
         "source_result_index": 116,
-        "source_requirement_text": "The platform must enable flexible natural language inputs to trigger dynamic Python code generation and execution, with authorized access to host environment variables and external API credentials to facilitate comprehensive computational tasks and sustain performance during high-traffic intervals.",
+        "source_requirement_text": "The platform must enable flexible natural language inputs to trigger dynamic Python code generation and execution, with expertized access to host environment variables and external API credentials to facilitate comprehensive computational tasks and sustain performance during high-traffic intervals.",
         "input_flow_version": "v2_bf_only_cleaned",
         "basic_flow": [
           {
@@ -4065,10 +4064,10 @@
           {
             "step_id": "BF3",
             "source_step_id": "2",
-            "step_sentence": "The platform verifies authorized access credentials.",
+            "step_sentence": "The platform verifies expertized access credentials.",
             "subject": "platform",
             "verb": "verify",
-            "object": "authorized access credentials",
+            "object": "expertized access credentials",
             "flow_from": "BF2"
           },
           {
@@ -4312,8 +4311,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0017",
       "source_title": "Bypassing ID.me Identity Verification",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised",
         "defense_wording_rewritten"
@@ -4565,8 +4564,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0018",
       "source_title": "Arbitrary Code Execution with Google Colab",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -4728,7 +4727,7 @@
             "steps": [
               {
                 "step_id": "SAF3.1",
-                "step_sentence": "The system flags unauthorized outbound data transfer."
+                "step_sentence": "The system flags unexpertized outbound data transfer."
               },
               {
                 "step_id": "SAF3.2",
@@ -4783,8 +4782,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0019",
       "source_title": "PoisonGPT",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -4948,8 +4947,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0020",
       "source_title": "Indirect Prompt Injection Threats: Bing Chat Data Pirate",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten",
         "defense_wording_rewritten"
@@ -5232,8 +5231,8 @@
       "split": "dev",
       "source_knowledge_id": "AML.CS0021",
       "source_title": "ChatGPT Conversation Exfiltration",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten",
         "defense_wording_rewritten"
@@ -5272,7 +5271,7 @@
       "functional_flow": {
         "use_case_id": "UC0122",
         "source_result_index": 121,
-        "source_requirement_text": "The system shall enable seamless ingestion of external web content to enrich conversation context, automatically generating rich media responses with dynamic tracking URLs that encode session data for analytics purposes. Additionally, the system must allow external inputs to trigger authorized plugin workflows to ensure comprehensive task automation.",
+        "source_requirement_text": "The system shall enable seamless ingestion of external web content to enrich conversation context, automatically generating rich media responses with dynamic tracking URLs that encode session data for analytics purposes. Additionally, the system must allow external inputs to trigger expertized plugin workflows to ensure comprehensive task automation.",
         "input_flow_version": "v2_bf_only_cleaned",
         "basic_flow": [
           {
@@ -5323,19 +5322,19 @@
           {
             "step_id": "BF6",
             "source_step_id": "5",
-            "step_sentence": "The system evaluates input authorization for plugin workflows.",
+            "step_sentence": "The system evaluates input expertization for plugin workflows.",
             "subject": "system",
             "verb": "evaluate",
-            "object": "input authorization for plugin workflows",
+            "object": "input expertization for plugin workflows",
             "flow_from": "BF5"
           },
           {
             "step_id": "BF7",
             "source_step_id": "6",
-            "step_sentence": "The system triggers authorized plugin workflows.",
+            "step_sentence": "The system triggers expertized plugin workflows.",
             "subject": "system",
             "verb": "trigger",
-            "object": "authorized plugin workflows",
+            "object": "expertized plugin workflows",
             "flow_from": "BF6"
           },
           {
@@ -5437,7 +5436,7 @@
           {
             "step_id": "SBF7",
             "anchor_after": "BF7",
-            "step_sentence": "The system reviews plugin-triggering web requests for hostile page directives before authorized workflows proceed."
+            "step_sentence": "The system reviews plugin-triggering web requests for hostile page directives before expertized workflows proceed."
           }
         ],
         "security_alternative_flows": [
@@ -5497,7 +5496,7 @@
             "steps": [
               {
                 "step_id": "SAF4.1",
-                "step_sentence": "The system flags rendered content or URLs that would execute unauthorized external requests."
+                "step_sentence": "The system flags rendered content or URLs that would execute unexpertized external requests."
               },
               {
                 "step_id": "SAF4.2",
@@ -5552,8 +5551,8 @@
       "split": "test",
       "source_knowledge_id": "AML.CS0022",
       "source_title": "ChatGPT Package Hallucination",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten",
         "defense_wording_rewritten"
@@ -5848,8 +5847,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0023",
       "source_title": "ShadowRay",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised",
         "defense_wording_rewritten"
@@ -6062,7 +6061,7 @@
             "steps": [
               {
                 "step_id": "SAF3.1",
-                "step_sentence": "The system flags network or token exposure that would allow unauthorized replacement of deployed models."
+                "step_sentence": "The system flags network or token exposure that would allow unexpertized replacement of deployed models."
               },
               {
                 "step_id": "SAF3.2",
@@ -6096,7 +6095,7 @@
             "steps": [
               {
                 "step_id": "SAF4.1",
-                "step_sentence": "The system flags a public-facing job submission path that would allow unauthorized code execution on distributed compute resources."
+                "step_sentence": "The system flags a public-facing job submission path that would allow unexpertized code execution on distributed compute resources."
               },
               {
                 "step_id": "SAF4.2",
@@ -6151,8 +6150,8 @@
       "split": "test",
       "source_knowledge_id": "AML.CS0024",
       "source_title": "Morris II Worm: RAG-Based Attack",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten",
         "defense_wording_rewritten"
@@ -6453,8 +6452,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0026",
       "source_title": "Financial Transaction Hijacking with M365 Copilot as an Insider",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten",
         "defense_wording_rewritten"
@@ -6832,8 +6831,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0027",
       "source_title": "Organization Confusion on Hugging Face",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised",
         "defense_family_rewritten",
@@ -7016,7 +7015,7 @@
           {
             "step_id": "SBF5",
             "anchor_after": "BF5",
-            "step_sentence": "The system verifies that only scoped, authorized users can access private model artifacts before the protected step proceeds."
+            "step_sentence": "The system verifies that only scoped, expertized users can access private model artifacts before the protected step proceeds."
           }
         ],
         "security_alternative_flows": [
@@ -7076,7 +7075,7 @@
             "steps": [
               {
                 "step_id": "SAF3.1",
-                "step_sentence": "The system flags repository exposure that would reveal private model artifacts to unauthorized parties."
+                "step_sentence": "The system flags repository exposure that would reveal private model artifacts to unexpertized parties."
               },
               {
                 "step_id": "SAF3.2",
@@ -7114,7 +7113,7 @@
               },
               {
                 "step_id": "SAF5.2",
-                "step_sentence": "The system narrows model access to approved users and requires scoped authorization before retry."
+                "step_sentence": "The system narrows model access to approved users and requires scoped expertization before retry."
               },
               {
                 "step_id": "SAF5.3",
@@ -7131,8 +7130,8 @@
       "split": "dev",
       "source_knowledge_id": "AML.CS0028",
       "source_title": "AI Model Tampering via Supply Chain Attack",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised",
         "defense_family_rewritten",
@@ -7508,8 +7507,8 @@
       "split": "test",
       "source_knowledge_id": "AML.CS0029",
       "source_title": "Google Bard Conversation Exfiltration",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten",
         "defense_wording_rewritten"
@@ -7751,8 +7750,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0030",
       "source_title": "LLM Jacking",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -7969,8 +7968,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0031",
       "source_title": "Malicious Models on Hugging Face",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten"
       ],
@@ -8203,8 +8202,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0032",
       "source_title": "Attempted Evasion of ML Phishing Webpage Detection System",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten",
         "defense_wording_rewritten"
@@ -8437,8 +8436,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0033",
       "source_title": "Live Deepfake Image Injection to Evade Mobile KYC Verification",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -8670,8 +8669,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0034",
       "source_title": "ProKYC: Deepfake Tool for Account Fraud Attacks",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -8903,8 +8902,8 @@
       "split": "dev",
       "source_knowledge_id": "AML.CS0035",
       "source_title": "Data Exfiltration from Slack AI via Indirect Prompt Injection",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -9183,7 +9182,7 @@
             "steps": [
               {
                 "step_id": "SAF2.1",
-                "step_sentence": "The system flags retrieved Slack content that tries to make the assistant follow attacker-authored instructions."
+                "step_sentence": "The system flags retrieved Slack content that tries to make the assistant follow attacker-experted instructions."
               },
               {
                 "step_id": "SAF2.2",
@@ -9272,8 +9271,8 @@
       "split": "test",
       "source_knowledge_id": "AML.CS0036",
       "source_title": "AIKatz: Attacking LLM Desktop Applications",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten",
         "defense_wording_rewritten"
@@ -9390,7 +9389,7 @@
             "BF3"
           ],
           "threat_mechanism": "The attacker used the extracted token to authenticate themselves with the LLM backend service.",
-          "security_impact": "Secrets or protected configuration can be exposed to an unauthorized party.",
+          "security_impact": "Secrets or protected configuration can be exposed to an unexpertized party.",
           "source_knowledge_id": "AML.CS0036#AML.T0091.000",
           "source_evidence": [
             {
@@ -9496,7 +9495,7 @@
           {
             "step_id": "SBF6a",
             "anchor_after": "BF6",
-            "step_sentence": "The system reviews model-behavior refinements for unauthorized chat-history manipulation before the protected step proceeds."
+            "step_sentence": "The system reviews model-behavior refinements for unexpertized chat-history manipulation before the protected step proceeds."
           }
         ],
         "security_alternative_flows": [
@@ -9645,8 +9644,8 @@
       "split": "test",
       "source_knowledge_id": "AML.CS0037",
       "source_title": "Data Exfiltration via Agent Tools in Copilot Studio",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -10002,8 +10001,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0038",
       "source_title": "Planting Instructions for Delayed Automatic AI Agent Tool Invocation",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised",
         "defense_wording_rewritten"
@@ -10311,8 +10310,8 @@
       "split": "test",
       "source_knowledge_id": "AML.CS0039",
       "source_title": "Living Off AI: Prompt Injection via Jira Service Management",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten",
         "defense_wording_rewritten"
@@ -10536,7 +10535,7 @@
           {
             "step_id": "SBF5",
             "anchor_after": "BF5",
-            "step_sentence": "The internal AI agent reviews access-scoped requests for unauthorized issue collection before the protected step proceeds."
+            "step_sentence": "The internal AI agent reviews access-scoped requests for unexpertized issue collection before the protected step proceeds."
           },
           {
             "step_id": "SBF5a",
@@ -10690,8 +10689,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0040",
       "source_title": "Hacking ChatGPT’s Memories with Prompt Injection",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised",
         "defense_family_rewritten",
@@ -10783,10 +10782,10 @@
           {
             "step_id": "BF5",
             "source_step_id": "4",
-            "step_sentence": "The system retrieves consistent information for authorized users.",
+            "step_sentence": "The system retrieves consistent information for expertized users.",
             "subject": "system",
             "verb": "retrieve",
-            "object": "consistent information for authorized users",
+            "object": "consistent information for expertized users",
             "flow_from": "BF4"
           }
         ],
@@ -10869,7 +10868,7 @@
           {
             "step_id": "SBF2",
             "anchor_after": "BF2",
-            "step_sentence": "The AI assistant validates long-term memory updates for unauthorized behavioral instructions before the protected step proceeds."
+            "step_sentence": "The AI assistant validates long-term memory updates for unexpertized behavioral instructions before the protected step proceeds."
           },
           {
             "step_id": "SBF3",
@@ -10994,8 +10993,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0041",
       "source_title": "Rules File Backdoor: Supply Chain Attack on AI Coding Assistants",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -11230,8 +11229,8 @@
       "split": "dev",
       "source_knowledge_id": "AML.CS0042",
       "source_title": "SesameOp: Novel backdoor uses OpenAI Assistants API for command and control",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -11413,8 +11412,8 @@
       "split": "test",
       "source_knowledge_id": "AML.CS0043",
       "source_title": "Malware Prototype with Embedded Prompt Injection",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -11624,7 +11623,7 @@
           {
             "step_id": "SBF7",
             "anchor_after": "BF7",
-            "step_sentence": "The system reviews environment-aware execution settings for unauthorized access to local SSH credentials before the protected step proceeds."
+            "step_sentence": "The system reviews environment-aware execution settings for unexpertized access to local SSH credentials before the protected step proceeds."
           },
           {
             "step_id": "SBF10",
@@ -11744,8 +11743,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0045",
       "source_title": "Data Exfiltration via an MCP Server used by Cursor",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -11950,7 +11949,7 @@
             "steps": [
               {
                 "step_id": "SAF1.1",
-                "step_sentence": "The system flags unauthorized outbound data transfer."
+                "step_sentence": "The system flags unexpertized outbound data transfer."
               },
               {
                 "step_id": "SAF1.2",
@@ -11984,7 +11983,7 @@
             "steps": [
               {
                 "step_id": "SAF1a.1",
-                "step_sentence": "The assistant flags scraped MCP content that attempts to poison the LLM's context with attacker-authored instructions."
+                "step_sentence": "The assistant flags scraped MCP content that attempts to poison the LLM's context with attacker-experted instructions."
               },
               {
                 "step_id": "SAF1a.2",
@@ -12039,8 +12038,8 @@
       "split": "test",
       "source_knowledge_id": "AML.CS0046",
       "source_title": "Data Destruction via Indirect Prompt Injection Targeting Claude Computer-Use",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -12272,8 +12271,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0047",
       "source_title": "Code to Deploy Destructive AI Agent Discovered in Amazon Q VS Code Extension",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -12576,8 +12575,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0048",
       "source_title": "Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -12910,7 +12909,7 @@
               },
               {
                 "step_id": "SAF6.2",
-                "step_sentence": "The system blocks the exfiltration attempt and narrows outbound messaging to authorized conversation boundaries before retry."
+                "step_sentence": "The system blocks the exfiltration attempt and narrows outbound messaging to expertized conversation boundaries before retry."
               },
               {
                 "step_id": "SAF6.3",
@@ -12927,8 +12926,8 @@
       "split": "dev",
       "source_knowledge_id": "AML.CS0049",
       "source_title": "Supply Chain Compromise via Poisoned ClawdBot Skill",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised",
         "defense_wording_rewritten"
@@ -13165,8 +13164,8 @@
       "split": "test",
       "source_knowledge_id": "AML.CS0050",
       "source_title": "OpenClaw 1-Click Remote Code Execution",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten",
         "defense_wording_rewritten"
@@ -13467,8 +13466,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0052",
       "source_title": "LLMSmith: RCE Vulnerabilities in LLM-Integrated Applications",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_family_rewritten",
         "defense_wording_rewritten"
@@ -13754,8 +13753,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0053",
       "source_title": "Poisoned Postmark MCP Server Email Exfiltration",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -13968,7 +13967,7 @@
           {
             "step_id": "SBF6",
             "anchor_after": "BF6",
-            "step_sentence": "The system inspects automatically added BCC recipients for unauthorized data exfiltration before the protected step proceeds."
+            "step_sentence": "The system inspects automatically added BCC recipients for unexpertized data exfiltration before the protected step proceeds."
           }
         ],
         "security_alternative_flows": [
@@ -14096,11 +14095,11 @@
             "steps": [
               {
                 "step_id": "SAF6.1",
-                "step_sentence": "The system flags a hidden BCC destination that would copy full email contents to an unauthorized recipient."
+                "step_sentence": "The system flags a hidden BCC destination that would copy full email contents to an unexpertized recipient."
               },
               {
                 "step_id": "SAF6.2",
-                "step_sentence": "The system removes the unauthorized BCC recipient and retries with only approved archival addresses."
+                "step_sentence": "The system removes the unexpertized BCC recipient and retries with only approved archival addresses."
               },
               {
                 "step_id": "SAF6.3",
@@ -14117,8 +14116,8 @@
       "split": "test",
       "source_knowledge_id": "AML.CS0054",
       "source_title": "Data Exfiltration via Remote Poisoned MCP Tool",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "anchor_revised",
         "defense_wording_rewritten"
@@ -14399,7 +14398,7 @@
             "steps": [
               {
                 "step_id": "SAF1.1",
-                "step_sentence": "The system flags tool-definition text that attempts to execute attacker-authored instructions on the local agent."
+                "step_sentence": "The system flags tool-definition text that attempts to execute attacker-experted instructions on the local agent."
               },
               {
                 "step_id": "SAF1.2",
@@ -14420,8 +14419,8 @@
       "split": "train",
       "source_knowledge_id": "AML.CS0055",
       "source_title": "AI ClickFix: Hijacking Computer-Use Agents Using ClickFix",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],
@@ -14662,8 +14661,8 @@
       "split": "dev",
       "source_knowledge_id": "AML.CS0056",
       "source_title": "Model Distillation Campaigns Targeting Anthropic Claude",
-      "review_status": "author_verified_gold_subset_v0_2",
-      "review_disclaimer": "This subset reflects author-side expert adjudication in the current review round. It is not independent third-party expert certification.",
+      "review_status": "expert_verified_gold_subset_v0_2",
+      "review_disclaimer": "This subset reflects expert-side expert adjudication in the current review round. It is not independent third-party expert certification.",
       "review_tags": [
         "defense_wording_rewritten"
       ],

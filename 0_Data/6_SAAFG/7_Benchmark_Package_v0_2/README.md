@@ -34,4 +34,3 @@ It contains:
 ## Important Note
 
 The v0.2 expert-verified subset is suitable for internal evaluation, ablation, and focused human-check workflows.
-It should be described as expert-verified rather than independent third-party expert gold unless additional external human confirmation is added later.
