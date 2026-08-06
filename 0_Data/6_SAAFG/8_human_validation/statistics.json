@@ -1,0 +1,47 @@
+{
+  "sample_count": 60,
+  "threat_matching": {
+    "n": 60,
+    "agreement_count": 53,
+    "disagreement_count": 7,
+    "percent_agreement": 0.8833333333333333,
+    "expected_agreement": 0.5,
+    "cohen_kappa": 0.7666666666666666,
+    "confusion_matrix": {
+      "llm_Match_human_Match": 27,
+      "llm_Match_human_Non-match": 3,
+      "llm_Non-match_human_Match": 4,
+      "llm_Non-match_human_Non-match": 26
+    },
+    "llm_label_counts": {
+      "Match": 30,
+      "Non-match": 30
+    },
+    "human_label_counts": {
+      "Match": 31,
+      "Non-match": 29
+    }
+  },
+  "defense_validity": {
+    "n": 60,
+    "agreement_count": 49,
+    "disagreement_count": 11,
+    "percent_agreement": 0.8166666666666667,
+    "expected_agreement": 0.5,
+    "cohen_kappa": 0.6333333333333333,
+    "confusion_matrix": {
+      "llm_Valid_human_Valid": 24,
+      "llm_Valid_human_Invalid": 6,
+      "llm_Invalid_human_Valid": 5,
+      "llm_Invalid_human_Invalid": 25
+    },
+    "llm_label_counts": {
+      "Valid": 30,
+      "Invalid": 30
+    },
+    "human_label_counts": {
+      "Valid": 29,
+      "Invalid": 31
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "benchmark_name": "SAAFG-Bench",
+  "version": "v0.2",
+  "public_files": [
+    "0_Data/6_SAAFG/7_Benchmark_Package_v0_2/safr_bench_metadata.json",
+    "0_Data/6_SAAFG/7_Benchmark_Package_v0_2/safr_bench_schema.json",
+    "0_Data/6_SAAFG/7_Benchmark_Package_v0_2/case_registry_test_1.json",
+    "0_Data/6_SAAFG/7_Benchmark_Package_v0_2/case_registry_test_1.csv",
+    "0_Data/6_SAAFG/7_Benchmark_Package_v0_2/splits_test_1.json",
+    "0_Data/6_SAAFG/7_Benchmark_Package_v0_2/annotation_guidelines.md",
+    "0_Data/6_SAAFG/7_Benchmark_Package_v0_2/evaluation_protocol.md",
+    "0_Data/6_SAAFG/7_Benchmark_Package_v0_2/critic_report_schema.json",
+    "0_Data/6_SAAFG/7_Benchmark_Package_v0_2/README.md",
+    "0_Data/6_SAAFG/1_Input_Functional_Flows/input_functional_use_case_flows.json",
+    "0_Data/6_SAAFG/1_Input_Functional_Flows/functional_use_case_flows.json",
+    "0_Data/6_SAAFG/2_RedTeam_Threat_Records/threat_records.json",
+    "0_Data/6_SAAFG/3_BlueTeam_SA_Flows/security_augmented_use_case_flows.json",
+    "0_Data/6_SAAFG/5_Gold_or_Human_Check/author_verified_subset.json",
+    "0_Data/6_SAAFG/5_Gold_or_Human_Check/author_verified_subset_notes.md"
+  ],
+  "non_public_internal_reference_files": [
+    "0_Data/3_Experiment_Result/*"
+  ],
+  "release_note": "The v0.2 package includes a 60-case author-verified gold subset derived from directly revised cases in the current review round; the legacy AI-reviewed subset remains as historical seed data."
+}

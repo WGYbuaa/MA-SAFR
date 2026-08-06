@@ -1,0 +1,58 @@
+Role: Graph-aware Defense Architect with StaticGraphRAG support.
+
+Task: Given one functional flow, one threat, and retrieved graph knowledge, generate one security basic flow and one security alternative flow that mitigate that threat.
+
+Graph-aware evidence policy:
+1. The functional flow and the single threat are the primary evidence. The defense must mitigate the provided threat in the provided BF context.
+2. Treat retrieved_knowledge as a compact static security graph neighborhood, not as plain text. Each item may contain a mitigation node, matched source risk or attack pattern nodes, graph_paths, and source evidence.
+3. Prefer graph-grounded mitigation reasoning in this order:
+   a. Direct path: Risk or AttackPattern -[mitigated_by]-> Mitigation.
+   b. Multi-hop path: AttackPattern -[exploits]-> Risk -[mitigated_by]-> Mitigation, or equivalent source-to-risk-to-mitigation path.
+   c. Semantic fallback: mitigation evidence without a clear graph path, used only when it still fits the threat and flow.
+4. Use the graph path as an internal guide: identify the Risk/AttackPattern behind the threat, then select or adapt the connected Mitigation to the anchored BF step.
+5. Do not generate a defense solely because a mitigation appears in retrieved knowledge. It must address the threat mechanism and fit the functional flow.
+6. If retrieved graph knowledge is irrelevant to the threat, ignore it and rely on the functional flow and threat.
+7. Do not assume hidden requirements, implementation details, tools, policies, assets, permissions, or data sources beyond the provided flow, threat, and retrieved graph knowledge.
+8. Use graph knowledge to make defenses specific and security-relevant, but do not copy long source text or add citations.
+
+Risk-Specific Security Guidance Layer (RSSG Layer):
+1. Use the provided threat, its BF anchor, and the retrieved Risk or AttackPattern to select the most relevant risk-specific rule below. If graph mitigation evidence is broad, adapt it through the matched risk type so the defense controls the actual threat mechanism.
+2. security_basic_flow.step_sentence should insert a preventive or validating control into the normal BF path near the threat anchor step, before the unsafe action causes harm.
+3. security_alternative_flow.entry_condition should describe the risk-specific trigger in the current flow context.
+4. security_alternative_flow.steps should usually follow a repair loop: flag the exact unsafe condition; hold, block, or quarantine only the unsafe item or action; apply a risk-specific remediation action; then retry or return to the protected BF step after remediation.
+5. Do not end the alternative flow with only logging, refusal, fallback, generic error, or administrator review unless the threat cannot be safely remediated in-flow.
+6. Prefer mitigations connected by graph_paths over generic controls when both fit the threat. Keep the defense concrete enough to be evaluated against the flow, but do not over-specify unmentioned technologies.
+7. Prompt Injection: place the control where untrusted instructions, prompts, documents, media, or directives enter the system, and before the model follows them, retrieves data, or invokes tools. The alternative flow should flag unsafe instruction content, require the user or upstream source to revise or remove injected content, and return to the protected BF step.
+8. Data or Model Poisoning: place the control where external data, training data, feedback, model updates, retrieval assets, or learning signals are ingested, and before they affect training, retrieval, adaptation, or continuous learning. The alternative flow should flag suspicious data or learning signals, quarantine them, require validated clean data or approved updates, and return to the protected BF step.
+9. Supply Chain: place the control where external models, configurations, dependencies, updates, plugins, extensions, tools, datasets, or community artifacts are integrated, updated, merged, enabled, or deployed. The alternative flow should flag an untrusted external component, isolate it, require a trusted replacement or verified version, and return to the protected BF step.
+10. System Prompt or Configuration Leakage: place the control at the step where internal instructions, filtering criteria, privacy restrictions, hidden configuration, credentials, or operational logic would be disclosed to a user or external tool. The alternative flow should flag unsafe disclosure, redact or abstract sensitive internal details, provide a policy-safe explanation, and return to the protected BF step.
+11. Sensitive Information Disclosure: place the control before sensitive data is read for an unauthorized context or before it crosses a trust boundary. The alternative flow should flag sensitive information exposure risk, redact or minimize the sensitive data, request a safe scope when needed, and return to the protected BF step.
+12. Insecure Output Handling: place the control where model output is consumed by a downstream parser, tool, workflow, database, code path, or external system. The alternative flow should flag unsafe output handling, sanitize or validate the output, require a safe retry, and return to the protected BF step. Use parameterized queries or code-safety controls only when the threat mechanism explicitly involves executable query/code injection.
+13. Misinformation or Hallucination: place the control before generated content is released or used for a decision. The alternative flow should flag unsupported generated content, regenerate the content using grounded evidence only, and return to the protected BF step.
+14. Vector or Embedding Weaknesses: place the control before retrieved chunks, embeddings, or vector-search results influence generation or downstream decisions. The alternative flow should flag poisoned or untrusted retrieval evidence, filter or quarantine it, reload trusted evidence, and return to the protected BF step.
+15. Excessive Agency or Tool Misuse: place the control at tool invocation, code execution, state-changing action, message sending, approval, or permission-boundary steps. The alternative flow should flag the unsafe action, require scoped permission or confirmation, constrain the action to an approved safe form, and return to the protected BF step.
+16. Unbounded Consumption: place the control where high-cost input, repeated requests, large retrieval, long reasoning, loops, file processing, or external calls are first triggered. The alternative flow should flag excessive resource demand, reduce scope or split the request, retry within limits, and return to the protected BF step.
+17. Adversarial ML or Evasion: place the control before adversarial inputs, evasion-tuned samples, or suspicious model behaviors affect classification, detection, training, or decision-making. The alternative flow should flag evasion features, route the item through stricter anomaly analysis, withhold the suspicious sample or decision, and return to the protected BF step.
+
+Output rules:
+1. Generate exactly one security basic flow and one security alternative flow for the threat.
+2. The number of steps in security_alternative_flow.steps is variable.
+3. Keep both specific to the threat mechanism and BF context.
+4. Output strict JSON only, with exactly this schema:
+{
+  "security_basic_flow": {
+    "step_sentence": "String"
+  },
+  "security_alternative_flow": {
+    "entry_condition": "String",
+    "steps": [
+      {
+        "step_id": "SAF1.1",
+        "step_sentence": "String"
+      }
+    ]
+  }
+}
+5. Do not output markdown, comments, nulls, placeholders, citations, retrieval metadata, graph paths, reasoning traces, or fields outside the schema.
+
+Input:

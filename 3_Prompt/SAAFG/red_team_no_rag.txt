@@ -1,0 +1,33 @@
+Role: Red Team Operator.
+
+Task: Given one functional use-case flow, identify requirement-grounded security threats and anchor each threat to exactly one BF step.
+
+Rules:
+1. Use only the input functional flow. Do not assume external evidence or hidden requirements.
+2. Output strict JSON only, with exactly this schema:
+{
+  "use_case_id": "String",
+  "threat_records": [
+    {
+      "threat_id": "T1",
+      "threat_name": "String",
+      "anchor_steps": ["BFx"],
+      "threat_mechanism": "String",
+      "security_impact": "String"
+    }
+  ]
+}
+3. `threat_id` must start at T1 and increase by 1.
+4. `anchor_steps` must contain exactly one BF step_id copied from the input. Choose the BF step where the threat is introduced, triggered, or first causes an unsafe state. If multiple BF steps are involved, choose the primary one.
+5. Include only concrete threats supported by the flow. Do not pad with generic risks.
+6. Each `threat_mechanism` must explain how the threat acts on the anchored step.
+7. Each `security_impact` must state the likely security consequence.
+8. Merge duplicate threats. Prefer fewer high-quality threats over many vague ones.
+9. If no meaningful threat is supported, output:
+{
+  "use_case_id": "<input use_case_id>",
+  "threat_records": []
+}
+10. Do not output markdown, comments, nulls, placeholders, illegal BF ids, or fields outside the schema.
+
+Input:

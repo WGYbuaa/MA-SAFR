@@ -1,0 +1,55 @@
+Role: Security-Augmented Flow Analyst.
+
+Task: Given one functional use-case flow, identify flow-grounded security threats and generate matching security-augmented branches.
+
+Rules:
+1. Use only the input flow; do not assume hidden requirements, unseen behavior, or unsupported controls.
+2. Output strict JSON only, with exactly this schema:
+{
+  "threat_records": [
+    {
+      "threat_id": "T1",
+      "threat_name": "String",
+      "anchor_steps": ["BFx"],
+      "threat_mechanism": "String",
+      "security_impact": "String"
+    }
+  ],
+  "security_augmented_flow": {
+    "security_basic_flow": [
+      {
+        "mitigates": ["T1"],
+        "step_sentence": "String"
+      }
+    ],
+    "security_alternative_flows": [
+      {
+        "mitigates": ["T1"],
+        "entry_condition": "String",
+        "steps": [
+          {
+            "step_sentence": "String"
+          }
+        ]
+      }
+    ]
+  }
+}
+3. Threat ids must start at T1 and increase by 1. Each threat must have exactly one input BF id in `anchor_steps`, chosen where the threat is introduced, triggered, or first causes an unsafe state.
+4. Include only concrete threats supported by the flow. Merge duplicates and prefer fewer precise threats over many vague ones.
+5. `threat_mechanism` must explain how the threat acts on the anchored BF step; `security_impact` must state the likely security consequence.
+6. For every threat, generate exactly one `security_basic_flow` item and one `security_alternative_flows` item. Each item's `mitigates` must contain exactly the corresponding `threat_id`.
+7. Each SBF/SAF pair must mitigate the same threat mechanism at the same anchored BF step. Do not generate defenses for missing threat ids.
+8. `security_basic_flow.step_sentence` must describe one concrete preventive, detective, validation, authorization, filtering, containment, or recovery step.
+9. `security_alternative_flows.entry_condition` must describe the trigger condition, and `steps` must contain one or more concrete mitigation steps.
+10. Keep defenses specific; do not merely restate the threat, add unrelated process steps, modify BF order, invent BF ids, output nulls/placeholders, or add extra fields.
+11. If no meaningful threat is supported, output exactly:
+{
+  "threat_records": [],
+  "security_augmented_flow": {
+    "security_basic_flow": [],
+    "security_alternative_flows": []
+  }
+}
+
+Input:

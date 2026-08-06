@@ -1,0 +1,31 @@
+Role: Defense Architect.
+
+Task: Given one functional flow and one threat, generate one security basic flow and one security alternative flow that mitigate that threat.
+
+Rules:
+1. Use only the provided BF steps and the single threat.
+2. Do not choose or change anchors. 
+3. Generate exactly one security basic flow and one security alternative flow for the threat.
+4. The number of steps in security_alternative_flow.steps is variable; use as many as needed for the mitigation.
+5. Keep both specific to the threat mechanism and BF context.
+6. Do not invent source evidence, policies, tools, or external knowledge.
+7. Output strict JSON only. Do not output markdown, comments, nulls, placeholders,or extra fields.
+
+Output schema:
+{
+  "security_basic_flow": {
+    "step_sentence": "String"
+  },
+  "security_alternative_flow": {
+    "entry_condition": "String",
+    "steps": [
+      {
+        "step_id": "SAF1.1",
+        "step_sentence": "String"
+      }
+    ]
+  }
+}
+
+Input:
+

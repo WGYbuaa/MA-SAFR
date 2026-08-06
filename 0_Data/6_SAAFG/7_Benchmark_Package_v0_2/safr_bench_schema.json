@@ -1,0 +1,56 @@
+{
+  "benchmark_name": "SAAFG-Bench",
+  "version": "v0.2",
+  "anchor_semantics": "anchor_steps contains exactly one primary defense-actionable BF step.",
+  "layers": {
+    "requirement_text": [
+      "use_case_id",
+      "dataset",
+      "source_knowledge_id",
+      "source_requirement_text"
+    ],
+    "functional_flow": [
+      "use_case_id",
+      "basic_flow",
+      "alternative_flows"
+    ],
+    "threat_records": [
+      "use_case_id",
+      "threat_records"
+    ],
+    "security_augmented_flow": [
+      "use_case_id",
+      "security_augmented_flow"
+    ]
+  },
+  "basic_flow_step_fields": [
+    "step_id",
+    "source_step_id",
+    "step_sentence",
+    "subject",
+    "verb",
+    "object",
+    "flow_from"
+  ],
+  "threat_record_fields": [
+    "threat_id",
+    "threat_name",
+    "anchor_steps",
+    "threat_mechanism",
+    "security_impact",
+    "source_knowledge_id",
+    "source_evidence"
+  ],
+  "security_basic_flow_fields": [
+    "step_id",
+    "anchor_after",
+    "step_sentence"
+  ],
+  "security_alternative_flow_fields": [
+    "saf_id",
+    "mitigates",
+    "entry_condition",
+    "source_evidence",
+    "steps"
+  ]
+}

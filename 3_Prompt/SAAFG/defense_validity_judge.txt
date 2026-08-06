@@ -1,0 +1,25 @@
+Role: Blue Team judge.
+
+Task: Judge whether a predicted security-augmented flow matches the silver defense for the same mapped threat pair.
+
+The silver defense is ground truth. Judge only whether the predicted defense is covered by or equivalent to the silver defense in the flow context.
+
+Rules:
+1. Use only the provided input artifacts.
+2. Wording, IDs, and alternative-flow step counts may differ.
+3. security_basic_flow_valid=true only if the predicted basic flow gives a concrete check/control at the protected flow point and aligns with the silver basic flow.
+4. security_alternative_flow_valid=true only if the predicted alternative flow gives a plausible flagged-threat response aligned with the silver alternative flow.
+5. Generic advice is not enough; the defense must match the silver defense intent and protected flow point.
+6. Do not credit different-threat defenses, compliance-only controls, reliability-only handling, or vague quality improvements.
+7. Output strict JSON only.
+
+Output schema:
+{
+  "security_basic_flow_valid": true,
+  "security_alternative_flow_valid": true,
+  "overall_defense_valid": true,
+  "reason_code": "same_defense | weak_basic_flow | weak_alternative_flow | missing_detection | missing_blocking | wrong_threat | too_generic | non_security | unclear",
+  "reasoning": "Short string"
+}
+
+Input:

@@ -1,0 +1,75 @@
+# Rec-EvoGraph-RAG Edge Weight Update Report
+
+- graph_name: Rec-EvoGraph-RAG critic-evolved security knowledge graph
+- version: v0.2
+- generated_at_utc: 2026-05-24T02:21:25.790193Z
+- base_graph_dir: `0_Data\5_Knowledge_Base\recevograph_rag`
+- feedback_jsonl: `0_Data\5_Knowledge_Base\recevograph_rag_feedback\v0_2\feedback_events.jsonl`
+- output_dir: `0_Data\5_Knowledge_Base\recevograph_rag_evo_v0_2\iter_01`
+
+## Leakage Policy
+
+Node text and graph topology are unchanged from the static OWASP/ATLAS graph. Only edge weights are updated from split-filtered critic feedback events.
+
+## Feedback Usage
+
+- input_event_count: 1413
+- used_edge_count: 897
+- skipped_split: 0
+- skipped_no_edges: 0
+- skipped_low_confidence: 0
+- missing_edge_key_count: 0
+
+## Update Policy
+
+- formula: `new_weight = clip(old_weight * exp(eta * clipped_signal), min_weight, max_weight)`
+- eta: 0.08
+- min_weight: 0.35
+- max_weight: 3.0
+- max_abs_signal: 5.0
+- negative_scale: 0.7
+- split_filter: train
+
+## Edge Weight Changes
+
+- edge_count: 8613
+- updated_edge_count: 897
+- increased_edge_count: 596
+- decreased_edge_count: 301
+- unchanged_after_clamp_or_rounding_count: 0
+- no_feedback_edge_count: 7716
+- max_abs_delta: 0.491825
+- mean_abs_delta: 0.028925
+
+## Top Absolute Deltas
+
+- edge::mitigated_by::2fbf0f222a10: mitigated_by 1.000000->1.491825 delta=0.491825 events=87 source=risk::owasp::llm03_supplychain target=mitigation::only_use_models_from_verifiable_sources_and_use_third_party_model_int_afa7804934
+- edge::mitigated_by::1535a7937022: mitigated_by 1.000000->1.491825 delta=0.491825 events=84 source=risk::owasp::llm03_supplychain target=mitigation::implement_a_patching_policy_to_mitigate_vulnerable_or_outdated_compon_1984a65bab
+- edge::mitigated_by::e61ad98876ee: mitigated_by 1.000000->1.491825 delta=0.491825 events=29 source=risk::atlas_tactic::aml_ta0005 target=mitigation::agent_config_tools
+- edge::mitigated_by::83df818dfb58: mitigated_by 1.000000->1.491825 delta=0.491825 events=18 source=risk::owasp::llm04_datamodelpoisoning target=mitigation::monitor_training_loss_and_analyze_model_behavior_for_signs_of_poisoni_c4280cb595
+- edge::mitigated_by::53bf0e1b244e: mitigated_by 1.000000->1.491825 delta=0.491825 events=13 source=risk::atlas_tactic::aml_ta0010 target=mitigation::agent_config_tools
+- edge::mitigated_by::580990682c28: mitigated_by 1.000000->1.485041 delta=0.485041 events=24 source=risk::owasp::llm04_datamodelpoisoning target=mitigation::store_user_supplied_information_in_a_vector_database_allowing_adjustm_e7c478b4d1
+- edge::mitigated_by::a781db4a730b: mitigated_by 1.000000->1.411421 delta=0.411421 events=18 source=risk::owasp::llm03_supplychain target=mitigation::carefully_vet_data_sources_and_suppliers_including_t_and_cs_and_their_b356b9bf84
+- edge::mitigated_by::486dca8e2dfe: mitigated_by 1.000000->1.349892 delta=0.349892 events=18 source=risk::atlas_tactic::aml_ta0005 target=mitigation::agent_config_priv
+- edge::mitigated_by::dd43379bfa67: mitigated_by 1.000000->1.332821 delta=0.332821 events=36 source=risk::owasp::llm03_supplychain target=mitigation::anomaly_detection_and_adversarial_robustness_tests_on_supplied_models_d5c412d9da
+- edge::mitigated_by::510ece273e8d: mitigated_by 1.000000->1.332578 delta=0.332578 events=15 source=risk::owasp::llm03_supplychain target=mitigation::apply_comprehensive_ai_red_teaming_and_evaluations_when_selecting_a_t_9f423eb2ee
+- edge::mitigated_by::0d60edbe1875: mitigated_by 1.000000->1.271835 delta=0.271835 events=11 source=attack_pattern::owasp::llm04_datamodelpoisoning::training_data_integrity::40 target=mitigation::store_user_supplied_information_in_a_vector_database_allowing_adjustm_e7c478b4d1
+- edge::mitigated_by::00a77461227e: mitigated_by 1.000000->1.251327 delta=0.251327 events=12 source=attack_pattern::owasp::llm03_supplychain::external_data_source_validation::37 target=mitigation::only_use_models_from_verifiable_sources_and_use_third_party_model_int_afa7804934
+- edge::exploits::adc3d69484ad: exploits 1.000000->1.245911 delta=0.245911 events=20 source=attack_pattern::owasp::llm03_supplychain::external_data_source_validation::37 target=risk::owasp::llm03_supplychain
+- edge::mitigated_by::525e36b30243: mitigated_by 1.000000->1.236247 delta=0.236247 events=12 source=risk::owasp::llm03_supplychain target=mitigation::encrypt_models_deployed_at_ai_edge_with_integrity_checks_and_use_vend_ae81320183
+- edge::exploits::559a22ced7ce: exploits 1.000000->1.232794 delta=0.232794 events=21 source=attack_pattern::owasp::llm04_datamodelpoisoning::training_data_integrity::40 target=risk::owasp::llm04_datamodelpoisoning
+- edge::mitigated_by::40f3dbe079a3: mitigated_by 1.000000->1.219911 delta=0.219911 events=11 source=attack_pattern::owasp::llm03_supplychain::external_data_source_validation::37 target=mitigation::anomaly_detection_and_adversarial_robustness_tests_on_supplied_models_d5c412d9da
+- edge::mitigated_by::40fb9f4276b3: mitigated_by 1.000000->1.212402 delta=0.212402 events=22 source=risk::owasp::llm04_datamodelpoisoning target=mitigation::ensure_sufficient_infrastructure_controls_to_prevent_the_model_from_a_f5f03c7975
+- edge::mitigated_by::dc0929e06d3d: mitigated_by 1.000000->1.206118 delta=0.206118 events=9 source=risk::owasp::llm04_datamodelpoisoning target=mitigation::vet_data_vendors_rigorously_and_validate_model_outputs_against_truste_cdb24e164c
+- edge::mitigated_by::60d9ed842c36: mitigated_by 1.000000->1.205070 delta=0.205070 events=9 source=risk::atlas_tactic::aml_ta0005 target=mitigation::hitl_agent_actions
+- edge::mitigated_by::b2ab32ed5de3: mitigated_by 1.000000->1.197217 delta=0.197217 events=3 source=attack_pattern::owasp::llm03_supplychain::dynamic_code_execution::23 target=mitigation::implement_a_patching_policy_to_mitigate_vulnerable_or_outdated_compon_1984a65bab
+- edge::mitigated_by::6a66391cdfb5: mitigated_by 1.000000->1.193116 delta=0.193116 events=4 source=attack_pattern::owasp::llm04_datamodelpoisoning::training_data_integrity::40 target=mitigation::monitor_training_loss_and_analyze_model_behavior_for_signs_of_poisoni_c4280cb595
+- edge::mitigated_by::1f6c802be205: mitigated_by 1.000000->1.191898 delta=0.191898 events=5 source=attack_pattern::owasp::llm03_supplychain::external_dependency_trust::30 target=mitigation::only_use_models_from_verifiable_sources_and_use_third_party_model_int_afa7804934
+- edge::exploits::8f23535a9b3f: exploits 1.000000->1.185756 delta=0.185756 events=10 source=attack_pattern::atlas::aml_cs0047::step_005::aml_t0103 target=risk::atlas_tactic::aml_ta0005
+- edge::mitigated_by::218a4009d129: mitigated_by 1.000000->1.182968 delta=0.182968 events=5 source=risk::atlas_tactic::aml_ta0003 target=mitigation::verify_ml_artifacts
+- edge::mitigated_by::5fe614707df3: mitigated_by 1.000000->1.182064 delta=0.182064 events=9 source=risk::owasp::llm04_datamodelpoisoning target=mitigation::implement_strict_sandboxing_to_limit_model_exposure_to_unverified_dat_6b3392c1d8
+- edge::mitigated_by::7b3044e8f01e: mitigated_by 1.000000->1.180357 delta=0.180357 events=11 source=risk::atlas_tactic::aml_ta0006 target=mitigation::gen_ai_guidelines
+- edge::mitigated_by::e96bcdc414bd: mitigated_by 1.000000->1.173511 delta=0.173511 events=2 source=attack_pattern::owasp::llm04_datamodelpoisoning::external_data_injection::39 target=mitigation::monitor_training_loss_and_analyze_model_behavior_for_signs_of_poisoni_c4280cb595
+- edge::mitigated_by::579088625829: mitigated_by 1.000000->1.169277 delta=0.169277 events=16 source=risk::owasp::llm08_vectorandembeddingweaknesses target=mitigation::data_validation_and_source_authentication
+- edge::exploits::300f4f3a18c6: exploits 1.000000->1.154519 delta=0.154519 events=8 source=attack_pattern::atlas::aml_cs0048::step_009::aml_t0025 target=risk::atlas_tactic::aml_ta0010
+- edge::mitigated_by::1ddd9a0de389: mitigated_by 1.000000->1.150180 delta=0.150180 events=15 source=risk::owasp::llm09_misinformation target=mitigation::training_and_education

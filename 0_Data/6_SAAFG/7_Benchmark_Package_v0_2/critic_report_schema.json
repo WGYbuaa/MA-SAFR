@@ -1,0 +1,19 @@
+{
+  "dataset_name": "SAAFG Critic Report Schema",
+  "version": "v0.2",
+  "fields": [
+    "use_case_id",
+    "overall_decision",
+    "threat_validity",
+    "threat_coverage",
+    "traceability",
+    "branch_closure",
+    "flow_consistency",
+    "notes"
+  ],
+  "decision_values": [
+    "accept",
+    "revise",
+    "reject"
+  ]
+}

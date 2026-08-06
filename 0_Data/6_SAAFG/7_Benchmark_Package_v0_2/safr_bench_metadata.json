@@ -1,0 +1,35 @@
+{
+  "benchmark_name": "SAAFG-Bench",
+  "version": "v0.2",
+  "generated_at_utc": "2026-05-09T05:27:22.256405Z",
+  "case_count": 157,
+  "dataset_breakdown": {
+    "owasp": 100,
+    "atlas": 57
+  },
+  "split_breakdown": {
+    "train": 80,
+    "dev": 20,
+    "test": 57,
+    "gold_subset_legacy_v0_1": 12
+  },
+  "threat_count_breakdown": {
+    "owasp": 100,
+    "atlas": 135
+  },
+  "empty_threat_case_count": 0,
+  "empty_threat_case_ids": [],
+  "notes": [
+    "This benchmark package is built on local OWASP/ATLAS-derived assets already present in the repository.",
+    "The functional flow layer is derived from parser-produced system_flow outputs after conservative cleanup.",
+    "ATLAS core silver excludes attacker-side-only preparation, staging, and reconnaissance techniques unless they map to a victim-side actionable step.",
+    "anchor_steps in v0.2 contains exactly one primary defense-actionable BF step.",
+    "The benchmark package now includes an author-verified v0.2 gold subset covering cases directly revised in the current review round.",
+    "The legacy AI-reviewed gold subset remains available for historical reference and was not auto-upgraded to v0.2 semantics."
+  ],
+  "human_check_breakdown": {
+    "legacy_ai_reviewed_gold_subset_v0_1": 12,
+    "author_verified_gold_subset_v0_2": 60,
+    "optional_anchor_sidecar_v0_2_case_count": 34
+  }
+}

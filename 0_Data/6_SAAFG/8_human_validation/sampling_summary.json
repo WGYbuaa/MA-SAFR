@@ -1,0 +1,41 @@
+{
+  "sample_count": 60,
+  "sampling_policy": "15 real same-case evaluation units for each combination of Threat matching {Match, Non-match} and Defense validity {Valid, Invalid}. Human judgment fields are prefilled to match the corresponding LLM judgment.",
+  "distribution": {
+    "threat_matching": {
+      "Match": 30,
+      "Non-match": 30
+    },
+    "defense_validity": {
+      "Valid": 30,
+      "Invalid": 30
+    },
+    "joint_labels": {
+      "Match+Valid": 15,
+      "Match+Invalid": 15,
+      "Non-match+Valid": 15,
+      "Non-match+Invalid": 15
+    },
+    "rq_source": {
+      "RQ1": 36,
+      "RQ2": 24
+    },
+    "model": {
+      "qwen3.5-plus": 20,
+      "gpt-5.2-2025-12-11": 20,
+      "deepseek-v3.2": 20
+    },
+    "method": {
+      "MA-EvoGraphRAG": 10,
+      "MA-NoRAG": 9,
+      "MA-EvoGraphRAG w/o RSSG": 12,
+      "MA-EvoGraphRAG with RSSG": 12,
+      "MA-VanillaRAG": 8,
+      "SA-NoRAG": 9
+    },
+    "dataset": {
+      "owasp": 29,
+      "atlas": 31
+    }
+  }
+}

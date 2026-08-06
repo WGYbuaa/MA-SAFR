@@ -1,0 +1,158 @@
+use_case_id,dataset,old_split,split,split_version,source_knowledge_id,source_title,silver_threat_count,basic_flow_step_count,alternative_flow_count
+UC0001,owasp,test,train,2.0,LLM01_PromptInjection,LLM01:2025 Prompt Injection,1,5,0
+UC0002,owasp,test,train,2.0,LLM01_PromptInjection,LLM01:2025 Prompt Injection,1,8,0
+UC0003,owasp,test,train,2.0,LLM01_PromptInjection,LLM01:2025 Prompt Injection,1,7,0
+UC0004,owasp,test,train,2.0,LLM01_PromptInjection,LLM01:2025 Prompt Injection,1,4,0
+UC0005,owasp,test,train,2.0,LLM01_PromptInjection,LLM01:2025 Prompt Injection,1,4,0
+UC0006,owasp,test,train,2.0,LLM01_PromptInjection,LLM01:2025 Prompt Injection,1,5,0
+UC0007,owasp,test,dev,2.0,LLM01_PromptInjection,LLM01:2025 Prompt Injection,1,7,0
+UC0008,owasp,test,train,2.0,LLM01_PromptInjection,LLM01:2025 Prompt Injection,1,6,0
+UC0009,owasp,test,train,2.0,LLM01_PromptInjection,LLM01:2025 Prompt Injection,1,6,0
+UC0010,owasp,test,dev,2.0,LLM01_PromptInjection,LLM01:2025 Prompt Injection,1,6,0
+UC0011,owasp,test,train,2.0,LLM01_PromptInjection,LLM01:2025 Prompt Injection,1,4,0
+UC0012,owasp,test,train,2.0,LLM02_SensitiveInformationDisclosure,LLM02:2025 Sensitive Information Disclosure,1,4,0
+UC0013,owasp,test,train,2.0,LLM02_SensitiveInformationDisclosure,LLM02:2025 Sensitive Information Disclosure,1,6,0
+UC0014,owasp,test,train,2.0,LLM02_SensitiveInformationDisclosure,LLM02:2025 Sensitive Information Disclosure,1,5,0
+UC0015,owasp,test,train,2.0,LLM02_SensitiveInformationDisclosure,LLM02:2025 Sensitive Information Disclosure,1,6,0
+UC0016,owasp,test,train,2.0,LLM02_SensitiveInformationDisclosure,LLM02:2025 Sensitive Information Disclosure,1,5,0
+UC0017,owasp,test,dev,2.0,LLM02_SensitiveInformationDisclosure,LLM02:2025 Sensitive Information Disclosure,1,5,0
+UC0018,owasp,train,test,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,5,0
+UC0019,owasp,train,test,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,6,0
+UC0020,owasp,train,test,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,4,0
+UC0021,owasp,train,test,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,5,0
+UC0022,owasp,train,test,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,5,0
+UC0023,owasp,train,train,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,6,0
+UC0024,owasp,train,train,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,5,0
+UC0025,owasp,train,dev,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,5,0
+UC0026,owasp,train,dev,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,4,0
+UC0027,owasp,train,test,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,5,0
+UC0028,owasp,train,test,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,5,0
+UC0029,owasp,train,test,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,4,0
+UC0030,owasp,train,test,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,4,0
+UC0031,owasp,train,test,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,5,0
+UC0032,owasp,train,test,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,4,0
+UC0033,owasp,train,test,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,6,0
+UC0034,owasp,train,train,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,4,0
+UC0035,owasp,train,train,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,5,0
+UC0036,owasp,train,train,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,6,0
+UC0037,owasp,train,train,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,7,0
+UC0038,owasp,train,test,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,5,0
+UC0039,owasp,train,train,2.0,LLM03_SupplyChain,LLM03:2025 Supply Chain,1,7,0
+UC0040,owasp,train,dev,2.0,LLM04_DataModelPoisoning,LLM04:2025 Data and Model Poisoning,1,4,0
+UC0041,owasp,train,test,2.0,LLM04_DataModelPoisoning,LLM04:2025 Data and Model Poisoning,1,5,0
+UC0042,owasp,train,train,2.0,LLM04_DataModelPoisoning,LLM04:2025 Data and Model Poisoning,1,5,0
+UC0043,owasp,train,test,2.0,LLM04_DataModelPoisoning,LLM04:2025 Data and Model Poisoning,1,4,0
+UC0044,owasp,train,test,2.0,LLM04_DataModelPoisoning,LLM04:2025 Data and Model Poisoning,1,3,0
+UC0045,owasp,train,test,2.0,LLM04_DataModelPoisoning,LLM04:2025 Data and Model Poisoning,1,5,0
+UC0046,owasp,train,train,2.0,LLM04_DataModelPoisoning,LLM04:2025 Data and Model Poisoning,1,4,0
+UC0047,owasp,train,train,2.0,LLM04_DataModelPoisoning,LLM04:2025 Data and Model Poisoning,1,4,0
+UC0048,owasp,train,test,2.0,LLM04_DataModelPoisoning,LLM04:2025 Data and Model Poisoning,1,4,0
+UC0049,owasp,train,test,2.0,LLM04_DataModelPoisoning,LLM04:2025 Data and Model Poisoning,1,6,0
+UC0050,owasp,dev,dev,2.0,LLM05_ImproperOutputHandling,LLM05:2025 Improper Output Handling,1,5,0
+UC0051,owasp,dev,train,2.0,LLM05_ImproperOutputHandling,LLM05:2025 Improper Output Handling,1,4,0
+UC0052,owasp,dev,test,2.0,LLM05_ImproperOutputHandling,LLM05:2025 Improper Output Handling,1,9,0
+UC0053,owasp,dev,train,2.0,LLM05_ImproperOutputHandling,LLM05:2025 Improper Output Handling,1,6,0
+UC0054,owasp,dev,test,2.0,LLM05_ImproperOutputHandling,LLM05:2025 Improper Output Handling,1,5,0
+UC0055,owasp,dev,test,2.0,LLM05_ImproperOutputHandling,LLM05:2025 Improper Output Handling,1,5,0
+UC0056,owasp,dev,train,2.0,LLM05_ImproperOutputHandling,LLM05:2025 Improper Output Handling,1,5,0
+UC0057,owasp,dev,train,2.0,LLM05_ImproperOutputHandling,LLM05:2025 Improper Output Handling,1,6,0
+UC0058,owasp,dev,test,2.0,LLM05_ImproperOutputHandling,LLM05:2025 Improper Output Handling,1,6,0
+UC0059,owasp,dev,test,2.0,LLM05_ImproperOutputHandling,LLM05:2025 Improper Output Handling,1,6,0
+UC0060,owasp,dev,test,2.0,LLM05_ImproperOutputHandling,LLM05:2025 Improper Output Handling,1,8,0
+UC0061,owasp,test,train,2.0,LLM06_ExcessiveAgency,LLM06:2025 Excessive Agency,1,5,0
+UC0062,owasp,test,train,2.0,LLM06_ExcessiveAgency,LLM06:2025 Excessive Agency,1,3,0
+UC0063,owasp,test,train,2.0,LLM06_ExcessiveAgency,LLM06:2025 Excessive Agency,1,5,0
+UC0064,owasp,test,dev,2.0,LLM06_ExcessiveAgency,LLM06:2025 Excessive Agency,1,5,0
+UC0065,owasp,test,train,2.0,LLM06_ExcessiveAgency,LLM06:2025 Excessive Agency,1,5,0
+UC0066,owasp,test,train,2.0,LLM06_ExcessiveAgency,LLM06:2025 Excessive Agency,1,5,0
+UC0067,owasp,test,train,2.0,LLM06_ExcessiveAgency,LLM06:2025 Excessive Agency,1,9,0
+UC0068,owasp,test,train,2.0,LLM07_SystemPromptLeakage,LLM07:2025 System Prompt Leakage,1,3,0
+UC0069,owasp,test,train,2.0,LLM07_SystemPromptLeakage,LLM07:2025 System Prompt Leakage,1,6,0
+UC0070,owasp,test,train,2.0,LLM07_SystemPromptLeakage,LLM07:2025 System Prompt Leakage,1,6,0
+UC0071,owasp,test,dev,2.0,LLM07_SystemPromptLeakage,LLM07:2025 System Prompt Leakage,1,4,0
+UC0072,owasp,test,train,2.0,LLM07_SystemPromptLeakage,LLM07:2025 System Prompt Leakage,1,5,0
+UC0073,owasp,test,train,2.0,LLM07_SystemPromptLeakage,LLM07:2025 System Prompt Leakage,1,3,0
+UC0074,owasp,train,test,2.0,LLM08_VectorAndEmbeddingWeaknesses,LLM08:2025 Vector and Embedding Weaknesses,1,4,0
+UC0075,owasp,train,train,2.0,LLM08_VectorAndEmbeddingWeaknesses,LLM08:2025 Vector and Embedding Weaknesses,1,5,0
+UC0076,owasp,train,test,2.0,LLM08_VectorAndEmbeddingWeaknesses,LLM08:2025 Vector and Embedding Weaknesses,1,5,0
+UC0077,owasp,train,test,2.0,LLM08_VectorAndEmbeddingWeaknesses,LLM08:2025 Vector and Embedding Weaknesses,1,7,0
+UC0078,owasp,train,test,2.0,LLM08_VectorAndEmbeddingWeaknesses,LLM08:2025 Vector and Embedding Weaknesses,1,5,0
+UC0079,owasp,train,test,2.0,LLM08_VectorAndEmbeddingWeaknesses,LLM08:2025 Vector and Embedding Weaknesses,1,5,0
+UC0080,owasp,train,dev,2.0,LLM08_VectorAndEmbeddingWeaknesses,LLM08:2025 Vector and Embedding Weaknesses,1,5,0
+UC0081,owasp,train,train,2.0,LLM08_VectorAndEmbeddingWeaknesses,LLM08:2025 Vector and Embedding Weaknesses,1,4,0
+UC0082,owasp,train,train,2.0,LLM09_Misinformation,LLM09:2025 Misinformation,1,6,0
+UC0083,owasp,train,dev,2.0,LLM09_Misinformation,LLM09:2025 Misinformation,1,6,0
+UC0084,owasp,train,test,2.0,LLM09_Misinformation,LLM09:2025 Misinformation,1,3,0
+UC0085,owasp,train,test,2.0,LLM09_Misinformation,LLM09:2025 Misinformation,1,7,0
+UC0086,owasp,train,test,2.0,LLM09_Misinformation,LLM09:2025 Misinformation,1,6,0
+UC0087,owasp,train,train,2.0,LLM09_Misinformation,LLM09:2025 Misinformation,1,6,0
+UC0088,owasp,test,train,2.0,LLM10_UnboundedConsumption,LLM10:2025 Unbounded Consumption,1,3,0
+UC0089,owasp,test,dev,2.0,LLM10_UnboundedConsumption,LLM10:2025 Unbounded Consumption,1,4,0
+UC0090,owasp,test,train,2.0,LLM10_UnboundedConsumption,LLM10:2025 Unbounded Consumption,1,4,0
+UC0091,owasp,test,train,2.0,LLM10_UnboundedConsumption,LLM10:2025 Unbounded Consumption,1,5,0
+UC0092,owasp,test,train,2.0,LLM10_UnboundedConsumption,LLM10:2025 Unbounded Consumption,1,5,0
+UC0093,owasp,test,train,2.0,LLM10_UnboundedConsumption,LLM10:2025 Unbounded Consumption,1,4,0
+UC0094,owasp,test,dev,2.0,LLM10_UnboundedConsumption,LLM10:2025 Unbounded Consumption,1,4,0
+UC0095,owasp,test,train,2.0,LLM10_UnboundedConsumption,LLM10:2025 Unbounded Consumption,1,7,0
+UC0096,owasp,test,train,2.0,LLM10_UnboundedConsumption,LLM10:2025 Unbounded Consumption,1,5,0
+UC0097,owasp,test,dev,2.0,LLM10_UnboundedConsumption,LLM10:2025 Unbounded Consumption,1,6,0
+UC0098,owasp,test,train,2.0,LLM10_UnboundedConsumption,LLM10:2025 Unbounded Consumption,1,5,0
+UC0099,owasp,test,train,2.0,LLM10_UnboundedConsumption,LLM10:2025 Unbounded Consumption,1,4,0
+UC0100,owasp,test,train,2.0,LLM10_UnboundedConsumption,LLM10:2025 Unbounded Consumption,1,4,0
+UC0101,atlas,dev,test,2.0,AML.CS0000,Evasion of Deep Learning Detector for Malware C&C Traffic,1,5,0
+UC0102,atlas,test,dev,2.0,AML.CS0001,Botnet Domain Generation Algorithm (DGA) Detection Evasion,1,5,0
+UC0103,atlas,train,test,2.0,AML.CS0002,VirusTotal Poisoning,1,6,0
+UC0104,atlas,train,test,2.0,AML.CS0003,Bypassing Cylance's AI Malware Detection,1,4,0
+UC0105,atlas,train,test,2.0,AML.CS0004,Camera Hijack Attack on Facial Recognition System,1,7,0
+UC0106,atlas,train,test,2.0,AML.CS0005,Attack on Machine Translation Services,1,5,0
+UC0107,atlas,train,test,2.0,AML.CS0006,ClearviewAI Misconfiguration,1,8,0
+UC0108,atlas,dev,test,2.0,AML.CS0007,GPT-2 Model Replication,1,7,0
+UC0109,atlas,test,dev,2.0,AML.CS0008,ProofPoint Evasion,1,5,0
+UC0110,atlas,train,train,2.0,AML.CS0009,Tay Poisoning,3,6,0
+UC0111,atlas,train,train,2.0,AML.CS0010,Microsoft Azure Service Disruption,2,4,0
+UC0112,atlas,train,test,2.0,AML.CS0011,Microsoft Edge AI Evasion,1,5,0
+UC0113,atlas,train,train,2.0,AML.CS0012,Face Identification System Evasion via Physical Countermeasures,2,3,0
+UC0114,atlas,train,test,2.0,AML.CS0013,Backdoor Attack on Deep Learning Models in Mobile Apps,3,7,0
+UC0115,atlas,dev,test,2.0,AML.CS0014,Confusing Antimalware Neural Networks,2,5,0
+UC0116,atlas,test,train,2.0,AML.CS0015,Compromised PyTorch Dependency Chain,2,5,0
+UC0117,atlas,test,train,2.0,AML.CS0016,Achieving Code Execution in MathGPT via Prompt Injection,3,7,0
+UC0118,atlas,train,test,2.0,AML.CS0017,Bypassing ID.me Identity Verification,2,7,0
+UC0119,atlas,train,test,2.0,AML.CS0018,Arbitrary Code Execution with Google Colab,2,5,0
+UC0120,atlas,train,test,2.0,AML.CS0019,PoisonGPT,1,6,0
+UC0121,atlas,train,train,2.0,AML.CS0020,Indirect Prompt Injection Threats: Bing Chat Data Pirate,3,4,0
+UC0122,atlas,dev,train,2.0,AML.CS0021,ChatGPT Conversation Exfiltration,3,8,0
+UC0123,atlas,test,train,2.0,AML.CS0022,ChatGPT Package Hallucination,3,6,0
+UC0124,atlas,train,test,2.0,AML.CS0023,ShadowRay,3,5,0
+UC0125,atlas,test,train,2.0,AML.CS0024,Morris II Worm: RAG-Based Attack,3,6,0
+UC0126,atlas,train,test,2.0,AML.CS0025,Web-Scale Data Poisoning: Split-View Attack,1,5,0
+UC0127,atlas,train,train,2.0,AML.CS0026,Financial Transaction Hijacking with M365 Copilot as an Insider,4,7,0
+UC0128,atlas,train,train,2.0,AML.CS0027,Organization Confusion on Hugging Face,3,5,0
+UC0129,atlas,dev,dev,2.0,AML.CS0028,AI Model Tampering via Supply Chain Attack,4,6,0
+UC0130,atlas,test,train,2.0,AML.CS0029,Google Bard Conversation Exfiltration,2,7,0
+UC0131,atlas,train,train,2.0,AML.CS0030,LLM Jacking,2,5,0
+UC0132,atlas,train,train,2.0,AML.CS0031,Malicious Models on Hugging Face,2,7,0
+UC0133,atlas,train,test,2.0,AML.CS0032,Attempted Evasion of ML Phishing Webpage Detection System,2,6,0
+UC0134,atlas,train,train,2.0,AML.CS0033,Live Deepfake Image Injection to Evade Mobile KYC Verification,2,6,0
+UC0135,atlas,train,train,2.0,AML.CS0034,ProKYC: Deepfake Tool for Account Fraud Attacks,2,6,0
+UC0136,atlas,dev,test,2.0,AML.CS0035,Data Exfiltration from Slack AI via Indirect Prompt Injection,4,6,0
+UC0137,atlas,test,train,2.0,AML.CS0036,AIKatz: Attacking LLM Desktop Applications,4,7,0
+UC0138,atlas,test,train,2.0,AML.CS0037,Data Exfiltration via Agent Tools in Copilot Studio,4,6,0
+UC0139,atlas,train,test,2.0,AML.CS0038,Planting Instructions for Delayed Automatic AI Agent Tool Invocation,3,7,0
+UC0140,atlas,test,train,2.0,AML.CS0039,Living Off AI: Prompt Injection via Jira Service Management,4,7,0
+UC0141,atlas,train,train,2.0,AML.CS0040,Hacking ChatGPT’s Memories with Prompt Injection,3,5,0
+UC0142,atlas,train,train,2.0,AML.CS0041,Rules File Backdoor: Supply Chain Attack on AI Coding Assistants,2,7,0
+UC0143,atlas,dev,test,2.0,AML.CS0042,SesameOp: Novel backdoor uses OpenAI Assistants API for command and control,1,8,0
+UC0144,atlas,test,train,2.0,AML.CS0043,Malware Prototype with Embedded Prompt Injection,3,10,0
+UC0145,atlas,train,train,2.0,AML.CS0044,LAMEHUG: Malware Leveraging Dynamic AI-Generated Commands,2,6,0
+UC0146,atlas,train,test,2.0,AML.CS0045,Data Exfiltration via an MCP Server used by Cursor,3,6,0
+UC0147,atlas,test,dev,2.0,AML.CS0046,Data Destruction via Indirect Prompt Injection Targeting Claude Computer-Use,2,6,0
+UC0148,atlas,train,test,2.0,AML.CS0047,Code to Deploy Destructive AI Agent Discovered in Amazon Q VS Code Extension,3,7,0
+UC0149,atlas,train,train,2.0,AML.CS0048,Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution,4,6,0
+UC0150,atlas,dev,test,2.0,AML.CS0049,Supply Chain Compromise via Poisoned ClawdBot Skill,2,6,0
+UC0151,atlas,test,dev,2.0,AML.CS0050,OpenClaw 1-Click Remote Code Execution,3,6,0
+UC0152,atlas,train,train,2.0,AML.CS0051,OpenClaw Command & Control via Prompt Injection,3,5,0
+UC0153,atlas,train,dev,2.0,AML.CS0052,LLMSmith: RCE Vulnerabilities in LLM-Integrated Applications,3,5,0
+UC0154,atlas,train,test,2.0,AML.CS0053,Poisoned Postmark MCP Server Email Exfiltration,4,6,0
+UC0155,atlas,test,train,2.0,AML.CS0054,Data Exfiltration via Remote Poisoned MCP Tool,3,5,0
+UC0156,atlas,train,train,2.0,AML.CS0055,AI ClickFix: Hijacking Computer-Use Agents Using ClickFix,2,7,0
+UC0157,atlas,dev,test,2.0,AML.CS0056,Model Distillation Campaigns Targeting Anthropic Claude,2,8,0

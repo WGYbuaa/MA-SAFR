@@ -1,0 +1,11 @@
+.env
+.venv/
+.venv_clean/
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+_chroma_runtime/
+chroma_db_runtime/

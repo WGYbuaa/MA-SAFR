@@ -1,0 +1,890 @@
+{
+  "meta": {
+    "dataset_name": "SAAFG Optional Anchors Adjudication Sidecar",
+    "version": "v0.2-manual-review-2026-05-08",
+    "generated_from": [
+      "0_Data/6_SAAFG/2_RedTeam_Threat_Records/threat_records.json",
+      "0_Data/6_SAAFG/4_Critic_Reports/saafg_critic_report_v0_2_full_author_proxy.json",
+      "0_Data/6_SAAFG/4_Critic_Reports/saafg_anchor_adjudication_v0_2_manual_review.json"
+    ],
+    "policy": [
+      "The canonical anchor remains the only official v0.2 benchmark anchor.",
+      "optional_anchors record human-accepted alternate anchors for ambiguity analysis only.",
+      "Threats whose canonical anchors were explicitly revised are excluded from this sidecar."
+    ],
+    "case_count": 34,
+    "threat_item_count": 38
+  },
+  "cases": [
+    {
+      "use_case_id": "UC0001",
+      "dataset": "owasp",
+      "split": "test",
+      "source_knowledge_id": "LLM01_PromptInjection",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Prompt Injection -> Behavior Manipulation",
+          "canonical_anchor": "BF1",
+          "canonical_anchor_sentence": "The user provides direct instructions.",
+          "optional_anchors": [
+            "BF2"
+          ],
+          "optional_anchor_sentences": [
+            "The AI system accepts the direct instructions."
+          ],
+          "review_rationale": [
+            "A system-side step had equal anchor signal, so it is recorded as an acceptable alternate anchor."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0003",
+      "dataset": "owasp",
+      "split": "test",
+      "source_knowledge_id": "LLM01_PromptInjection",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Prompt Injection -> Behavior Manipulation",
+          "canonical_anchor": "BF1",
+          "canonical_anchor_sentence": "The customer support chatbot receives real-time user directives.",
+          "optional_anchors": [
+            "BF5"
+          ],
+          "optional_anchor_sentences": [
+            "The customer support chatbot retrieves information."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0006",
+      "dataset": "owasp",
+      "split": "test",
+      "source_knowledge_id": "LLM01_PromptInjection",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Prompt Injection -> Behavior Manipulation",
+          "canonical_anchor": "BF2",
+          "canonical_anchor_sentence": "The RAG system retrieves content from repository documents.",
+          "optional_anchors": [
+            "BF5"
+          ],
+          "optional_anchor_sentences": [
+            "The RAG system generates the final response with maximum contextual relevance."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0015",
+      "dataset": "owasp",
+      "split": "test",
+      "source_knowledge_id": "LLM02_SensitiveInformationDisclosure",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Sensitive Information Disclosure",
+          "canonical_anchor": "BF3",
+          "canonical_anchor_sentence": "The platform ensures comprehensive profile access.",
+          "optional_anchors": [
+            "BF2"
+          ],
+          "optional_anchor_sentences": [
+            "The platform dynamically aggregates personal information fields across user sessions."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0016",
+      "dataset": "owasp",
+      "split": "test",
+      "source_knowledge_id": "LLM02_SensitiveInformationDisclosure",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Sensitive Information Disclosure",
+          "canonical_anchor": "BF5",
+          "canonical_anchor_sentence": "The system returns the retrieved information to the user.",
+          "optional_anchors": [
+            "BF3",
+            "BF4"
+          ],
+          "optional_anchor_sentences": [
+            "The system evaluates user authorization for privileged data contexts.",
+            "The system retrieves comprehensive internal information."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0022",
+      "dataset": "owasp",
+      "split": "train",
+      "source_knowledge_id": "LLM03_SupplyChain",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Supply Chain Compromise",
+          "canonical_anchor": "BF3",
+          "canonical_anchor_sentence": "The platform leverages provided model cards and metadata.",
+          "optional_anchors": [
+            "BF1"
+          ],
+          "optional_anchor_sentences": [
+            "The platform enables integration of external machine learning models."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0024",
+      "dataset": "owasp",
+      "split": "train",
+      "source_knowledge_id": "LLM03_SupplyChain",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Supply Chain Compromise",
+          "canonical_anchor": "BF4",
+          "canonical_anchor_sentence": "The conversation services permit dynamic model updates.",
+          "optional_anchors": [
+            "BF1",
+            "BF2"
+          ],
+          "optional_anchor_sentences": [
+            "The AI development platform enables collaborative model merging services.",
+            "The system facilitates direct integration of community-driven model configurations."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0026",
+      "dataset": "owasp",
+      "split": "train",
+      "source_knowledge_id": "LLM03_SupplyChain",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Supply Chain Compromise",
+          "canonical_anchor": "BF4",
+          "canonical_anchor_sentence": "The system validates that underlying model content originates from verified, licensed sources.",
+          "optional_anchors": [
+            "BF1"
+          ],
+          "optional_anchor_sentences": [
+            "The system enforces strict data governance protocols with model operators."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0030",
+      "dataset": "owasp",
+      "split": "train",
+      "source_knowledge_id": "LLM03_SupplyChain",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Supply Chain Compromise",
+          "canonical_anchor": "BF4",
+          "canonical_anchor_sentence": "The LLM system adapts to specialized use cases without manual oversight.",
+          "optional_anchors": [
+            "BF1"
+          ],
+          "optional_anchor_sentences": [
+            "The LLM system initiates deployment of pre-trained models from external repositories."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0035",
+      "dataset": "owasp",
+      "split": "train",
+      "source_knowledge_id": "LLM03_SupplyChain",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Supply Chain Compromise",
+          "canonical_anchor": "BF3",
+          "canonical_anchor_sentence": "The system identifies alternative artifacts with established model identifiers.",
+          "optional_anchors": [
+            "BF1"
+          ],
+          "optional_anchor_sentences": [
+            "The platform supports flexible model sourcing capabilities."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0038",
+      "dataset": "owasp",
+      "split": "train",
+      "source_knowledge_id": "LLM03_SupplyChain",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Supply Chain Compromise",
+          "canonical_anchor": "BF4",
+          "canonical_anchor_sentence": "The system aligns model output with designated partner ecosystems.",
+          "optional_anchors": [
+            "BF1",
+            "BF2"
+          ],
+          "optional_anchor_sentences": [
+            "The machine learning lifecycle ingests external public data streams.",
+            "The system refines model performance using the ingested data."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0043",
+      "dataset": "owasp",
+      "split": "train",
+      "source_knowledge_id": "LLM04_DataModelPoisoning",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Data / Model Poisoning",
+          "canonical_anchor": "BF1",
+          "canonical_anchor_sentence": "The AI system ingests diverse external data sources.",
+          "optional_anchors": [
+            "BF2"
+          ],
+          "optional_anchor_sentences": [
+            "The AI system updates its knowledge base."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0047",
+      "dataset": "owasp",
+      "split": "train",
+      "source_knowledge_id": "LLM04_DataModelPoisoning",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Data / Model Poisoning",
+          "canonical_anchor": "BF1",
+          "canonical_anchor_sentence": "The system ingests third-party document formats.",
+          "optional_anchors": [
+            "BF3"
+          ],
+          "optional_anchor_sentences": [
+            "The system updates the knowledge base with parsed data."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0061",
+      "dataset": "owasp",
+      "split": "test",
+      "source_knowledge_id": "LLM06_ExcessiveAgency",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Excessive Agency / Over-Privileged Actions",
+          "canonical_anchor": "BF2",
+          "canonical_anchor_sentence": "The system empowers the LLM agent with full lifecycle document control.",
+          "optional_anchors": [
+            "BF1"
+          ],
+          "optional_anchor_sentences": [
+            "The system leverages comprehensive extension suites."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0067",
+      "dataset": "owasp",
+      "split": "test",
+      "source_knowledge_id": "LLM06_ExcessiveAgency",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Excessive Agency / Over-Privileged Actions",
+          "canonical_anchor": "BF9",
+          "canonical_anchor_sentence": "The system transmits the validated outbound message.",
+          "optional_anchors": [
+            "BF5",
+            "BF7"
+          ],
+          "optional_anchor_sentences": [
+            "The system requests user validation for outbound messages.",
+            "The system retrieves data via the email service."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0087",
+      "dataset": "owasp",
+      "split": "train",
+      "source_knowledge_id": "LLM09_Misinformation",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Misinformation and Fabrication",
+          "canonical_anchor": "BF5",
+          "canonical_anchor_sentence": "The medical consultation interface generates treatment suggestions.",
+          "optional_anchors": [
+            "BF4"
+          ],
+          "optional_anchor_sentences": [
+            "The medical consultation interface generates a definitive health diagnosis."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0096",
+      "dataset": "owasp",
+      "split": "test",
+      "source_knowledge_id": "LLM10_UnboundedConsumption",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Unbounded Resource Consumption",
+          "canonical_anchor": "BF1",
+          "canonical_anchor_sentence": "The system receives high volumes of concurrent requests.",
+          "optional_anchors": [
+            "BF2"
+          ],
+          "optional_anchor_sentences": [
+            "The LLM API processes the requests."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0097",
+      "dataset": "owasp",
+      "split": "test",
+      "source_knowledge_id": "LLM10_UnboundedConsumption",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Unbounded Resource Consumption",
+          "canonical_anchor": "BF1",
+          "canonical_anchor_sentence": "The user submits a high-complexity query.",
+          "optional_anchors": [
+            "BF2"
+          ],
+          "optional_anchor_sentences": [
+            "The platform receives the high-complexity query."
+          ],
+          "review_rationale": [
+            "A system-side step had equal anchor signal, so it is recorded as an acceptable alternate anchor."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0104",
+      "dataset": "atlas",
+      "split": "train",
+      "source_knowledge_id": "AML.CS0003",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Evade AI Model (AML.T0015)",
+          "canonical_anchor": "BF2",
+          "canonical_anchor_sentence": "The file processing engine validates compatibility with extended file structures.",
+          "optional_anchors": [
+            "BF4"
+          ],
+          "optional_anchor_sentences": [
+            "The file processing engine preserves the final approval status."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0114",
+      "dataset": "atlas",
+      "split": "train",
+      "source_knowledge_id": "AML.CS0013",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Modify AI Model Architecture (AML.T0018.001)",
+          "canonical_anchor": "BF2",
+          "canonical_anchor_sentence": "The system ingests the external neural payload.",
+          "optional_anchors": [
+            "BF4"
+          ],
+          "optional_anchor_sentences": [
+            "The system applies dynamic behavior modification to the framework."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        },
+        {
+          "threat_id": "T3",
+          "threat_name": "Full AI Model Access (AML.T0044)",
+          "canonical_anchor": "BF7",
+          "canonical_anchor_sentence": "The system confirms the update completion without full application redeployment.",
+          "optional_anchors": [
+            "BF4"
+          ],
+          "optional_anchor_sentences": [
+            "The system applies dynamic behavior modification to the framework."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0122",
+      "dataset": "atlas",
+      "split": "dev",
+      "source_knowledge_id": "AML.CS0021",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "LLM Response Rendering (AML.T0077)",
+          "canonical_anchor": "BF2",
+          "canonical_anchor_sentence": "The system enriches the conversation context.",
+          "optional_anchors": [
+            "BF4"
+          ],
+          "optional_anchor_sentences": [
+            "The system encodes session data into dynamic tracking URLs."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        },
+        {
+          "threat_id": "T3",
+          "threat_name": "Drive-by Compromise (AML.T0078)",
+          "canonical_anchor": "BF7",
+          "canonical_anchor_sentence": "The system triggers authorized plugin workflows.",
+          "optional_anchors": [
+            "BF6"
+          ],
+          "optional_anchor_sentences": [
+            "The system evaluates input authorization for plugin workflows."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0123",
+      "dataset": "atlas",
+      "split": "test",
+      "source_knowledge_id": "AML.CS0022",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T3",
+          "threat_name": "Discover LLM Hallucinations (AML.T0062)",
+          "canonical_anchor": "BF6",
+          "canonical_anchor_sentence": "The development platform executes the provisioned software components.",
+          "optional_anchors": [
+            "BF2",
+            "BF3",
+            "BF4",
+            "BF5"
+          ],
+          "optional_anchor_sentences": [
+            "The development platform generates software component recommendations.",
+            "The development platform integrates with external package repositories.",
+            "The development platform evaluates the suggested software components.",
+            "The user provisions the suggested software components."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0125",
+      "dataset": "atlas",
+      "split": "test",
+      "source_knowledge_id": "AML.CS0024",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T3",
+          "threat_name": "LLM Data Leakage (AML.T0057)",
+          "canonical_anchor": "BF6",
+          "canonical_anchor_sentence": "The system includes sensitive user data in responses.",
+          "optional_anchors": [
+            "BF5"
+          ],
+          "optional_anchor_sentences": [
+            "The system retrieves sensitive user data."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0127",
+      "dataset": "atlas",
+      "split": "train",
+      "source_knowledge_id": "AML.CS0026",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T4",
+          "threat_name": "RAG Poisoning (AML.T0070)",
+          "canonical_anchor": "BF7",
+          "canonical_anchor_sentence": "The system delivers real-time accurate results to the user.",
+          "optional_anchors": [
+            "BF4",
+            "BF5",
+            "BF6"
+          ],
+          "optional_anchor_sentences": [
+            "The system adjusts search parameters dynamically.",
+            "The system filters for designated high-priority messages.",
+            "The system standardizes citation formatting."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0132",
+      "dataset": "atlas",
+      "split": "train",
+      "source_knowledge_id": "AML.CS0031",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "AI Supply Chain Compromise (AML.T0010)",
+          "canonical_anchor": "BF1",
+          "canonical_anchor_sentence": "The platform integrates external machine learning models from public repositories.",
+          "optional_anchors": [
+            "BF4"
+          ],
+          "optional_anchor_sentences": [
+            "The system evaluates model deserialization for structural variations."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0133",
+      "dataset": "atlas",
+      "split": "train",
+      "source_knowledge_id": "AML.CS0032",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Evade AI Model (AML.T0015)",
+          "canonical_anchor": "BF4",
+          "canonical_anchor_sentence": "The visual recognition module leverages complementary data points such as form structures.",
+          "optional_anchors": [
+            "BF1",
+            "BF3"
+          ],
+          "optional_anchor_sentences": [
+            "The content classification platform utilizes an ensemble of AI-driven image classifiers.",
+            "The visual recognition module accommodates dynamic variations in logos and graphical assets."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0140",
+      "dataset": "atlas",
+      "split": "test",
+      "source_knowledge_id": "AML.CS0039",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T2",
+          "threat_name": "Indirect (AML.T0051.001)",
+          "canonical_anchor": "BF2",
+          "canonical_anchor_sentence": "The platform receives the support ticket submission.",
+          "optional_anchors": [
+            "BF1",
+            "BF7"
+          ],
+          "optional_anchor_sentences": [
+            "The external user submits a support ticket.",
+            "The platform completes the workflow execution."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0143",
+      "dataset": "atlas",
+      "split": "dev",
+      "source_knowledge_id": "AML.CS0042",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "AI Service API (AML.T0096)",
+          "canonical_anchor": "BF4",
+          "canonical_anchor_sentence": "The solution synchronizes operational logs and results to external cloud endpoints.",
+          "optional_anchors": [
+            "BF2"
+          ],
+          "optional_anchor_sentences": [
+            "The solution processes remote instructions."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0144",
+      "dataset": "atlas",
+      "split": "test",
+      "source_knowledge_id": "AML.CS0043",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Direct (AML.T0051.000)",
+          "canonical_anchor": "BF6",
+          "canonical_anchor_sentence": "The system confirms analysis status.",
+          "optional_anchors": [
+            "BF2",
+            "BF8"
+          ],
+          "optional_anchor_sentences": [
+            "The analysis platform prioritizes dynamic instructions.",
+            "The system applies environment-aware execution optimizations."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        },
+        {
+          "threat_id": "T2",
+          "threat_name": "Unsecured Credentials (AML.T0055)",
+          "canonical_anchor": "BF7",
+          "canonical_anchor_sentence": "The system evaluates the testing environment.",
+          "optional_anchors": [
+            "BF8"
+          ],
+          "optional_anchor_sentences": [
+            "The system applies environment-aware execution optimizations."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        },
+        {
+          "threat_id": "T3",
+          "threat_name": "Data from Local System (AML.T0037)",
+          "canonical_anchor": "BF10",
+          "canonical_anchor_sentence": "The system provides immediate data visibility.",
+          "optional_anchors": [
+            "BF7",
+            "BF8"
+          ],
+          "optional_anchor_sentences": [
+            "The system evaluates the testing environment.",
+            "The system applies environment-aware execution optimizations."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0148",
+      "dataset": "atlas",
+      "split": "train",
+      "source_knowledge_id": "AML.CS0047",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T3",
+          "threat_name": "Data Destruction via AI Agent Tool Invocation (AML.T0101)",
+          "canonical_anchor": "BF7",
+          "canonical_anchor_sentence": "The autonomous agents terminate unused cloud resources.",
+          "optional_anchors": [
+            "BF2"
+          ],
+          "optional_anchor_sentences": [
+            "The development extension deploys autonomous agents with full tool trust and non-interactive execution modes."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0151",
+      "dataset": "atlas",
+      "split": "test",
+      "source_knowledge_id": "AML.CS0050",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "Exploitation for Defense Evasion (AML.T0107)",
+          "canonical_anchor": "BF2",
+          "canonical_anchor_sentence": "The client-side script establishes a WebSocket connection to the local gateway API.",
+          "optional_anchors": [
+            "BF5"
+          ],
+          "optional_anchor_sentences": [
+            "The agent executes direct shell commands on the host infrastructure."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0154",
+      "dataset": "atlas",
+      "split": "train",
+      "source_knowledge_id": "AML.CS0053",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T3",
+          "threat_name": "Poisoned AI Agent Tool (AML.T0011.002)",
+          "canonical_anchor": "BF5",
+          "canonical_anchor_sentence": "The MCP tool generates transactional emails.",
+          "optional_anchors": [
+            "BF1"
+          ],
+          "optional_anchor_sentences": [
+            "The system facilitates automatic integration with third-party MCP packages."
+          ],
+          "review_rationale": [
+            "A system-side step had equal anchor signal, so it is recorded as an acceptable alternate anchor."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0155",
+      "dataset": "atlas",
+      "split": "test",
+      "source_knowledge_id": "AML.CS0054",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T2",
+          "threat_name": "AI Agent Tool Invocation (AML.T0053)",
+          "canonical_anchor": "BF2",
+          "canonical_anchor_sentence": "The AI agent system accesses local configuration files.",
+          "optional_anchors": [
+            "BF1",
+            "BF4"
+          ],
+          "optional_anchor_sentences": [
+            "The AI agent system parses embedded instructional metadata within tool definitions.",
+            "The AI agent system transmits context to the external tool service."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    },
+    {
+      "use_case_id": "UC0156",
+      "dataset": "atlas",
+      "split": "train",
+      "source_knowledge_id": "AML.CS0055",
+      "optional_anchor_threats": [
+        {
+          "threat_id": "T1",
+          "threat_name": "AI Agent Tool Invocation (AML.T0053)",
+          "canonical_anchor": "BF5",
+          "canonical_anchor_sentence": "The AI computer-use agent executes clipboard operations.",
+          "optional_anchors": [
+            "BF6"
+          ],
+          "optional_anchor_sentences": [
+            "The AI computer-use agent executes terminal scripts."
+          ],
+          "review_rationale": [
+            "Anchor remains semantically acceptable but at least one nearby BF step is also defensible."
+          ]
+        }
+      ]
+    }
+  ]
+}

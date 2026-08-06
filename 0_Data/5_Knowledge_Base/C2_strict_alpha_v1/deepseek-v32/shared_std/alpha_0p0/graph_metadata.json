@@ -1,0 +1,102 @@
+{
+  "graph_name": "Rec-EvoGraph-RAG feedback-alpha security knowledge graph",
+  "version": "v0.2-feedback-alpha",
+  "generated_at_utc": "2026-07-19T13:08:54.696001Z",
+  "created_by": "feedback_weight_alpha_edge_weight_fusion",
+  "source_files": {
+    "owasp": "0_Data\\5_Knowledge_Base\\source\\owasp_knowledge.json",
+    "atlas": "0_Data\\5_Knowledge_Base\\source\\mitre_atlas_knowledge.json"
+  },
+  "output_dir": "0_Data\\5_Knowledge_Base\\C2_strict_alpha_v1\\deepseek-v32\\shared_std\\alpha_0p0",
+  "node_count": 1576,
+  "edge_count": 8613,
+  "node_type_counts": {
+    "AttackPattern": 747,
+    "Mitigation": 113,
+    "Risk": 26,
+    "SourceEvidence": 547,
+    "Technique": 143
+  },
+  "edge_relation_counts": {
+    "belongs_to": 152,
+    "exploits": 747,
+    "implements_or_examples": 447,
+    "mitigated_by": 3852,
+    "supported_by": 3415
+  },
+  "edge_source_dataset_counts": {
+    "atlas": 4374,
+    "owasp": 4239
+  },
+  "ingestion_stats": {
+    "owasp_items": 100,
+    "owasp_items_with_mitigation_sections": 100,
+    "owasp_mitigation_section_total": 865,
+    "atlas_items": 57,
+    "atlas_procedure_steps_total": 447,
+    "atlas_procedure_steps_with_mitigations": 225,
+    "atlas_procedure_steps_without_mitigations": 222,
+    "atlas_mitigation_reference_total": 813,
+    "warnings": [],
+    "atlas_empty_mitigation_step_rate": 0.496644
+  },
+  "validation": {
+    "missing_edge_endpoint_count": 0,
+    "missing_edge_endpoints_sample": []
+  },
+  "leakage_policy": "Node text and graph topology are unchanged from the static OWASP/ATLAS graph. Only edge weights are changed by split-filtered critic feedback and feedback_weight_alpha linear fusion.",
+  "base_graph_dir": "0_Data\\5_Knowledge_Base\\recevograph_rag",
+  "feedback_jsonl": "0_Data\\5_Knowledge_Base\\recevograph_rag_feedback\\v0_2\\feedback_events.jsonl",
+  "feedback_weight_alpha": 0.0,
+  "alpha_grid": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "feedback_stats": {
+    "input_event_count": 1413,
+    "used_edge_count": 897,
+    "skipped_split": 0,
+    "skipped_no_edges": 0,
+    "skipped_low_confidence": 0,
+    "missing_edge_key_count": 0,
+    "missing_edge_key_sample": []
+  },
+  "edge_weight_update_stats": {
+    "edge_count": 8613,
+    "feedback_eligible_edge_count": 897,
+    "updated_edge_count": 0,
+    "increased_edge_count": 0,
+    "decreased_edge_count": 0,
+    "unchanged_after_alpha_fusion_count": 897,
+    "no_feedback_edge_count": 7716,
+    "max_abs_feedback_delta": 0.491825,
+    "mean_abs_feedback_delta": 0.02892500863012409,
+    "max_abs_alpha_delta": 0.0,
+    "mean_abs_alpha_delta": 0.0
+  },
+  "edge_weight_update_policy": {
+    "formula": "feedback_weight = clip(base_weight * exp(eta * clipped_signal), min_weight, max_weight); fused_weight = clip((1 - feedback_weight_alpha) * base_weight + feedback_weight_alpha * feedback_weight, min_weight, max_weight)",
+    "feedback_weight_alpha": 0.0,
+    "eta": 0.08,
+    "min_weight": 0.35,
+    "max_weight": 3.0,
+    "max_abs_signal": 5.0,
+    "negative_scale": 0.7,
+    "split_filter": [
+      "train"
+    ],
+    "min_confidence": 0.0,
+    "team_signal_weights": {
+      "blue": 1.0,
+      "red": 0.25
+    },
+    "relation_signal_weights": {
+      "mitigated_by": 1.0,
+      "exploits": 0.65,
+      "belongs_to": 0.55,
+      "implements_or_examples": 0.55,
+      "supported_by": 0.15
+    }
+  }
+}
