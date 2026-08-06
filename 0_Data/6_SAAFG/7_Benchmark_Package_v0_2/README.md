@@ -2,7 +2,7 @@
 
 ## Summary
 
-This package provides the current v0.2 silver freeze for Security-Augmented Alternative Flow Generation (SAAFG).
+This package provides the current v0.2 freeze for Security-Augmented Alternative Flow Generation (SAAFG).
 
 It contains:
 
@@ -27,7 +27,7 @@ It contains:
 ## Human-Check Files
 
 - `author_verified_subset.json`: current round revised-case subset with reviewed flows, threat records, and security-augmented flows.
-- `author_verified_subset_notes.md`: scope and labeling notes for the author-verified subset.
+- `author_verified_subset_notes.md`: scope and labeling notes for the expert-verified subset.
 - `optional_anchor_adjudication.json`: ambiguity sidecar for acceptable alternate anchors that do not change the canonical benchmark anchor.
 - `saafg_ai_reviewed_gold_subset_seed_v0_1.json`: legacy AI-reviewed seed subset retained for historical comparison.
 
