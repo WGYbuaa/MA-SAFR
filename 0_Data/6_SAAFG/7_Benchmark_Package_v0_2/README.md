@@ -12,7 +12,7 @@ It contains:
 - source-grounded silver threat records
 - source-grounded silver security-augmented flows
 - schema and protocol documents
-- author-verified human-check artifacts under `0_Data/6_SAAFG/5_Gold_or_Human_Check`
+- expert-verified human-check artifacts under `0_Data/6_SAAFG/5_Gold_or_Human_Check`
 
 ## Counts
 
@@ -21,7 +21,7 @@ It contains:
 - dev cases: 20
 - test cases: 57
 - empty-core-threat cases: 0
-- author-verified gold subset cases: 60
+- expert-verified gold subset cases: 60
 - legacy AI-reviewed gold subset seed cases: 12
 
 ## Human-Check Files
@@ -33,5 +33,5 @@ It contains:
 
 ## Important Note
 
-The v0.2 author-verified subset is suitable for internal evaluation, ablation, and focused human-check workflows.
-It should be described as author-verified rather than independent third-party expert gold unless additional external human confirmation is added later.
+The v0.2 expert-verified subset is suitable for internal evaluation, ablation, and focused human-check workflows.
+It should be described as expert-verified rather than independent third-party expert gold unless additional external human confirmation is added later.
