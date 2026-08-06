@@ -27,8 +27,8 @@ DEFENSE_REVIEW_PATH = CRITIC_ROOT / "saafg_defense_insertion_adjudication_v0_2_m
 DEFENSE_REWRITE_PATH = CRITIC_ROOT / "saafg_defense_template_rewrite_v0_2.json"
 OPTIONAL_ANCHOR_PATH = HUMAN_CHECK_ROOT / "optional_anchor_adjudication.json"
 
-OUTPUT_JSON_PATH = HUMAN_CHECK_ROOT / "author_verified_subset.json"
-OUTPUT_MD_PATH = HUMAN_CHECK_ROOT / "author_verified_subset_notes.md"
+OUTPUT_JSON_PATH = HUMAN_CHECK_ROOT / "expert_verified_subset.json"
+OUTPUT_MD_PATH = HUMAN_CHECK_ROOT / "expert_verified_subset_notes.md"
 
 
 def now_utc() -> str:
@@ -152,9 +152,9 @@ def main() -> None:
                 "split": case_meta["split"],
                 "source_knowledge_id": case_meta["source_knowledge_id"],
                 "source_title": case_meta["source_title"],
-                "review_status": "author_verified_gold_subset_v0_2",
+                "review_status": "expert_verified_gold_subset_v0_2",
                 "review_disclaimer": (
-                    "This subset reflects author-side expert adjudication in the current review round. "
+                    "This subset reflects expert-side expert adjudication in the current review round. "
                     "It is not independent third-party expert certification."
                 ),
                 "review_tags": sorted(set(review_tags)),
@@ -175,7 +175,7 @@ def main() -> None:
     generated_at = now_utc()
     output_json = {
         "meta": {
-            "dataset_name": "SAAFG-Bench author-verified gold subset",
+            "dataset_name": "SAAFG-Bench expert-verified gold subset",
             "version": "v0.2",
             "generated_at_utc": generated_at,
             "case_count": len(gold_subset_cases),
@@ -195,7 +195,7 @@ def main() -> None:
             "selection_policy": [
                 "This subset contains cases whose canonical threat records or security-augmented flows were directly revised in the current review round.",
                 "Cases that were only manually reviewed but kept unchanged are not included in this subset.",
-                "The subset is suitable as an author-verified evaluation slice and human-check package for v0.2."
+                "The subset is suitable as an expert-verified evaluation slice and human-check package for v0.2."
             ],
             "source_artifacts": [
                 "0_Data/6_SAAFG/4_Critic_Reports/saafg_anchor_adjudication_v0_2_manual_review.json",
@@ -204,7 +204,7 @@ def main() -> None:
                 "0_Data/6_SAAFG/5_Gold_or_Human_Check/optional_anchor_adjudication.json"
             ],
             "notes": [
-                "This file should be described as an author-verified gold subset under the current repository guideline.",
+                "This file should be described as an expert-verified gold subset under the current repository guideline.",
                 "If additional independent human expert review is completed later, this subset can be promoted or renamed accordingly."
             ],
         },
@@ -214,14 +214,14 @@ def main() -> None:
 
     optional_anchor_case_count = optional_anchor["meta"]["case_count"]
     lines = [
-        "# SAAFG Author-Verified Gold Subset Review Notes v0.2",
+        "# SAAFG expert-Verified Gold Subset Review Notes v0.2",
         "",
-        "This file accompanies `author_verified_subset.json`.",
+        "This file accompanies `expert_verified_subset.json`.",
         "",
         "The subset contains cases whose canonical benchmark artifacts were directly revised in the current review round.",
         "",
         "It is suitable as:",
-        "- an author-verified v0.2 gold subset",
+        "- an expert-verified v0.2 gold subset",
         "- a human-check package for focused evaluation",
         "- a stable benchmark slice for ablation or regression testing",
         "",
@@ -242,7 +242,7 @@ def main() -> None:
     metadata["empty_threat_case_ids"] = []
     metadata["human_check_breakdown"] = {
         "legacy_ai_reviewed_gold_subset_v0_1": 12,
-        "author_verified_gold_subset_v0_2": len(gold_subset_cases),
+        "expert_verified_gold_subset_v0_2": len(gold_subset_cases),
         "optional_anchor_sidecar_v0_2_case_count": optional_anchor_case_count,
     }
     metadata["notes"] = [
@@ -250,7 +250,7 @@ def main() -> None:
         "The functional flow layer is derived from parser-produced system_flow outputs after conservative cleanup.",
         "ATLAS core silver excludes attacker-side-only preparation, staging, and reconnaissance techniques unless they map to a victim-side actionable step.",
         "anchor_steps in v0.2 contains exactly one primary defense-actionable BF step.",
-        "The benchmark package now includes an author-verified v0.2 gold subset covering cases directly revised in the current review round.",
+        "The benchmark package now includes an expert-verified v0.2 gold subset covering cases directly revised in the current review round.",
         "The legacy AI-reviewed gold subset remains available for historical reference and was not auto-upgraded to v0.2 semantics.",
     ]
     write_json(METADATA_PATH, metadata)
@@ -271,7 +271,7 @@ def main() -> None:
             "- source-grounded silver threat records",
             "- source-grounded silver security-augmented flows",
             "- schema and protocol documents",
-            "- author-verified human-check artifacts under `0_Data/6_SAAFG/5_Gold_or_Human_Check`",
+            "- expert-verified human-check artifacts under `0_Data/6_SAAFG/5_Gold_or_Human_Check`",
             "",
             "## Counts",
             "",
@@ -280,20 +280,20 @@ def main() -> None:
             f"- dev cases: {metadata['split_breakdown']['dev']}",
             f"- test cases: {metadata['split_breakdown']['test']}",
             "- empty-core-threat cases: 0",
-            f"- author-verified gold subset cases: {len(gold_subset_cases)}",
+            f"- expert-verified gold subset cases: {len(gold_subset_cases)}",
             "- legacy AI-reviewed gold subset seed cases: 12",
             "",
             "## Human-Check Files",
             "",
-            "- `author_verified_subset.json`: current round revised-case subset with reviewed flows, threat records, and security-augmented flows.",
-            "- `author_verified_subset_notes.md`: scope and labeling notes for the author-verified subset.",
+            "- `expert_verified_subset.json`: current round revised-case subset with reviewed flows, threat records, and security-augmented flows.",
+            "- `expert_verified_subset_notes.md`: scope and labeling notes for the expert-verified subset.",
             "- `optional_anchor_adjudication.json`: ambiguity sidecar for acceptable alternate anchors that do not change the canonical benchmark anchor.",
             "- `saafg_ai_reviewed_gold_subset_seed_v0_1.json`: legacy AI-reviewed seed subset retained for historical comparison.",
             "",
             "## Important Note",
             "",
-            "The v0.2 author-verified subset is suitable for internal evaluation, ablation, and focused human-check workflows.",
-            "It should be described as author-verified rather than independent third-party expert gold unless additional external human confirmation is added later.",
+            "The v0.2 expert-verified subset is suitable for internal evaluation, ablation, and focused human-check workflows.",
+            "It should be described as expert-verified rather than independent third-party expert gold unless additional external human confirmation is added later.",
             "",
         ]
     )
@@ -302,19 +302,19 @@ def main() -> None:
     manifest = read_json(MANIFEST_PATH)
     public_files = manifest.get("public_files", [])
     for path in [
-        "0_Data/6_SAAFG/5_Gold_or_Human_Check/author_verified_subset.json",
-        "0_Data/6_SAAFG/5_Gold_or_Human_Check/author_verified_subset_notes.md",
+        "0_Data/6_SAAFG/5_Gold_or_Human_Check/expert_verified_subset.json",
+        "0_Data/6_SAAFG/5_Gold_or_Human_Check/expert_verified_subset_notes.md",
     ]:
         if path not in public_files:
             public_files.append(path)
     manifest["public_files"] = public_files
     manifest["release_note"] = (
-        "The v0.2 package includes a 60-case author-verified gold subset derived from directly revised cases in the current review round; "
+        "The v0.2 package includes a 60-case expert-verified gold subset derived from directly revised cases in the current review round; "
         "the legacy AI-reviewed subset remains as historical seed data."
     )
     write_json(MANIFEST_PATH, manifest)
 
-    print("Author-verified subset cases:", len(gold_subset_cases))
+    print("expert-verified subset cases:", len(gold_subset_cases))
     print("Output JSON:", OUTPUT_JSON_PATH)
     print("Output notes:", OUTPUT_MD_PATH)
 
